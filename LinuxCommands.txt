@@ -1,0 +1,32 @@
+Command Description
+ls                                  List files and directories of current directory
+ls myfolder                         List files and directories of a specific folder
+                                    (e.g. myfolder)
+pwd                                 Get current directory path
+clear                               Clear the terminal
+touch example.txt                   Create new file
+mkdir                               Create new directory
+cd myfolder                         Change directory to myfolder
+cd ..                               Go back one directory
+cp example.txt myfolder/example.txt Copy example.txt file to myfolder
+mv example.txt myfolder/example.txt Move example.txt to myfolder
+rm example.txt                      Delete example.txt
+rm -r myfolder                      Delete myfolder and its content
+mv example.txt myexample.txt        Rename example.txt to myexample.txt
+tree                                Get current directory structure
+find . -name example.txt            Find file or directory
+cat example.txt                     Display file content
+du example.txt                      Get file or directory size
+zip example.zip example.txt         Compress example.txt to example.zip
+unzip example.zip                   Unzip example.zip to current directory
+zip -r example.zip myfolder         Compress all files of myfolder to example.zip
+man pwd                             Show help for a command
+help pwd                            Alternative of man pwd
+pip3 install —user library *       Installs a library for Python 3 *
+pip3 uninstall library              Uninstall a Python 3 library
+
+* If you are using Linux on PythonAnywhere keep in mind that many Python libraries are already installed by
+PythonAnywhere so first try to import the library in Python to see if it’s there so that you don’t install
+it twice and consume your given hard disk space.
+
+Source: The Python Mega Course: https://udemy.com/the-python-mega-course/
