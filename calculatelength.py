@@ -1,7 +1,12 @@
 
 def length_of_string():
     user_input = input("Enter some Characters : ")
-    return len(user_input)
+    mystring = user_input
+
+    if type(mystring) == int:
+        return "Sorry, integers don't have length"
+    else:
+        return len(mystring)
 
 
 print(length_of_string())
