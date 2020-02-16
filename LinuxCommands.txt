@@ -30,3 +30,6 @@ PythonAnywhere so first try to import the library in Python to see if it’s the
 it twice and consume your given hard disk space.
 
 Source: The Python Mega Course: https://udemy.com/the-python-mega-course/
+
+https://youtu.be/azcrPFhaY9k - How To Think Like A Programmer
+# used for simpleCalc.py & keepGoing.py
