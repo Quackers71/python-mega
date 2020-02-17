@@ -33,3 +33,24 @@ Source: The Python Mega Course: https://udemy.com/the-python-mega-course/
 
 https://youtu.be/azcrPFhaY9k - How To Think Like A Programmer
 # used for simpleCalc.py & keepGoing.py
+
+## Section 3: The Basics: Data Types
+
+# Variables and Coding Excercise 1 & 2
+
+1. Your First Python Excercise (E)
+Assign a value to x in the first line, and print out the variable value in the second.
+
+1 x = 1
+2 print(x)
+3 
+
+2. Assign Multiple Values and Print (E)
+Assign some values to variables x, y, and z.  Then insert x, y, and z inside a print() function to print out
+the values of those variables.
+
+1 x = 1
+2 y = 2
+3 z = 3
+4 print(x, y, z)
+ 
