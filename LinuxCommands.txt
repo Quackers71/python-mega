@@ -38,14 +38,14 @@ https://youtu.be/azcrPFhaY9k - How To Think Like A Programmer
 
 # Variables and Coding Excercise 1 & 2
 
-1. Your First Python Excercise (E)
+Coding Excercise 1. Your First Python Excercise (E)
 Assign a value to x in the first line, and print out the variable value in the second.
 
 1 x = 1
 2 print(x)
 3 
 
-2. Assign Multiple Values and Print (E)
+Coding Excercise 2. Assign Multiple Values and Print (E)
 Assign some values to variables x, y, and z.  Then insert x, y, and z inside a print() function to print out
 the values of those variables.
 
@@ -53,4 +53,21 @@ the values of those variables.
 2 y = 2
 3 z = 3
 4 print(x, y, z)
- 
+
+Coding Excercise 3. Create Integers, Strings, and Floats (E)
+Create three variables mood, strength, and rank and assign a string to mood, a float to strength, and an integer
+to rank.  The values you assign can be anything as long as they are the correct type.
+
+1 mood = "god"
+2 strength = 52.4
+3 rank = 100
+
+Coding Excercise 4. Sum Up Numbers (E)
+Assign numbers to x, y, and z.  Calculate the sum of x, y, and z in s.  Print out the value of s.
+
+1 x = 22
+2 y = 80.08
+3 z = 55
+4 s = x + y + z
+5 print(s)
+
