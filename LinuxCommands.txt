@@ -71,3 +71,20 @@ Assign numbers to x, y, and z.  Calculate the sum of x, y, and z in s.  Print ou
 4 s = x + y + z
 5 print(s)
 
+13. Ranges
+See Ranges.py
+
+Coding Excercise 5. Create List (E)
+Assign a list to variable temperatures.  The list should contain a float, integer & a string
+
+temperatures = [13.34, 6, "Hello"]
+
+Coding Excercise 6. Create Complex List (E)
+Assign a list to variable rainfall.  The list should contain a float, integer, a string & a list
+
+rainfall = [15.50, 60, "Yo Bitches!", ["Help", 14, 50, 1009.6]]
+
+15. Did You Know?
+Python got his name not from the snake, but from Monty 
+Python's Flying Circus, a favorite comedy series of Guido 
+van Rossum, the creator of Python.
