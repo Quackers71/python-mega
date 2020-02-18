@@ -20,3 +20,6 @@ for i in myList:
     
 for i in myList:
     print(ascii(i))
+
+student_grades = [9.1, 8.8, 7.5]
+print("Student #1 scored:",student_grades[0])
