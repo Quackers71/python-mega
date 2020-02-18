@@ -1,23 +1,27 @@
+def cr():
+    print("\r")
+
 student_grades = [9.1, 8.8, 7.5]
 print("Student #1 scored:",student_grades[0])
 print("\r")
 
 print(dir(list))
-print("\r")
+cr()
 print(dir(int))
-print("\"r")
+cr()
 print(dir(float))
-print("\r")
+cr()
 print(dir(str))
-print("\r")
+cr()
 
 help(str.upper)
-print("\r")
+cr()
 
 help(str.title)
+cr()
 
 print("hello".upper())
-print("\r")
+cr()
 
 myword = "hello world!"
 print(myword.title())
