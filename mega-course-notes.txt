@@ -151,3 +151,10 @@ sum(student_grades) :  25.4
 len(student_grades) :  3
 The mean of the student_grades :  8.466666666666667
 
+17. Steps of Learning Python
+
+1. Learning the Syntax
+2. Knowing the data structure i.e. List or Dict
+3. algorithms i.e. using functions and calculations
+   https://fiftyexamples.readthedocs.io/en/latest/algorithms.html
+
