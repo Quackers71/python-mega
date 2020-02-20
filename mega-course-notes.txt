@@ -158,3 +158,28 @@ The mean of the student_grades :  8.466666666666667
 3. algorithms i.e. using functions and calculations
    https://fiftyexamples.readthedocs.io/en/latest/algorithms.html
 
+Coding Excercise 7. Calculate Maximum (E)
+
+Complete the script so that it prints out the maximum value of student_grades. 
+Find the appropiate function or method.
+
+student_grades = [9.1, 8.8, 7.5]
+max_value = max(student_grades)
+print(max_value)
+
+Coding Excercise 8. Count Values (E)
+
+Find the proper function or method that counts how many 10.0 items there are in the student_grades and 
+print out the output using a print() function.
+
+student_grades = [9.1, 8.8, 10.0, 7.7, 6.8, 8.0, 10.0, 8.1, 10.0, 9.9]
+print(student_grades.count(10.0))
+
+Coding Excercise 9. Modify String (E)
+
+Find the proper function or method that converts the string in username into lowercase letters and 
+prints out the output.
+
+username = "Python3"
+print(username.lower())
+
