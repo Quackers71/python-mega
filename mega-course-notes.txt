@@ -183,3 +183,41 @@ prints out the output.
 username = "Python3"
 print(username.lower())
 
+19. Did You Know?
+Did you know that Python was first released in  1991?
+Python 2 was released in 2000, and Python 3 (the current 
+version) in 2008.
+
+Coding Excercise 10. Create Dictonary (E)
+Assign dict to variable day_temperatures. The dict should contain three keys, each key should
+have a float as the value
+
+day_temperatures = {"morning": 9.00, "noon": 12.00, "evening": 18.00}
+
+20. Tuple Types
+
+monday_temperatures = {1, 4, 5}   Tuple = immutable
+monday_temperatures2 = [1, 4, 5]   List = mutable # meaning you can add more items to the list
+monday_temperatures2.append(6)
+
+# Output
+PS C:\Users\Rob\Desktop\AWS EC2\python-mega> python .\Section3\tupleTypes.py
+This is a Tuple
+monday_temperatures = {1, 4, 5}
+{1, 4, 5}
+
+This is a List
+monday_temperatures2 = [1, 4, 5]
+[1, 4, 5]
+
+monday_temperatures2.append(9)
+The List is now:  [1, 4, 5, 9]
+
+This is a Dictonary
+monday_temperatures3 = {"temp1": 1, "temp2": 4, "temp3": 5}
+{'temp3': 5, 'temp1': 1, 'temp2': 4}
+
+output of the dict.values in a for loop
+5
+1
+4
