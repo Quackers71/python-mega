@@ -8,9 +8,9 @@ print(monday_temperatures)
 cr()
 
 print("Three Tuples as items")
-print("monday_temperatures = ((2,20, 200), (6, 60, 600), (9, 90, 900))")
-monday_temperatures = ((2,20, 200), (6, 60, 600), (9, 90, 900))
-print(monday_temperatures)
+print("color_codes = ((2,20, 200), (6, 60, 600), (9, 90, 900))")
+color_codes = ((2,20, 200), (6, 60, 600), (9, 90, 900))
+print(color_codes)
 cr()
 
 print("Tuples are immutable meaning they cannot be changed")
