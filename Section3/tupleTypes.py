@@ -7,6 +7,15 @@ monday_temperatures = {1, 4, 5}
 print(monday_temperatures)
 cr()
 
+print("Three Tuples as items")
+print("monday_temperatures = ((2,20, 200), (6, 60, 600), (9, 90, 900))")
+monday_temperatures = ((2,20, 200), (6, 60, 600), (9, 90, 900))
+print(monday_temperatures)
+cr()
+
+print("Tuples are immutable meaning they cannot be changed")
+cr()
+
 print("This is a List")
 print("monday_temperatures2 = [1, 4, 5]")
 monday_temperatures2 = [1, 4, 5]
@@ -16,6 +25,8 @@ cr()
 monday_temperatures2.append(9)
 print("monday_temperatures2.append(9)")
 print("The List is now: ",monday_temperatures2)
+cr()
+print("Lists and Dictonaries are mutable")
 cr()
 
 print("This is a Dictonary")

@@ -201,10 +201,16 @@ monday_temperatures2 = [1, 4, 5]   List = mutable # meaning you can add more ite
 monday_temperatures2.append(6)
 
 # Output
-PS C:\Users\Rob\Desktop\AWS EC2\python-mega> python .\Section3\tupleTypes.py
+PS C:\Users\fcukq\Desktop\python-mega> py -3 .\Section3\tupleTypes.py
 This is a Tuple
 monday_temperatures = {1, 4, 5}
 {1, 4, 5}
+
+Three Tuples as items
+monday_temperatures = ((2,20, 200), (6, 60, 600), (9, 90, 900))
+((2, 20, 200), (6, 60, 600), (9, 90, 900))
+
+Tuples are immutable meaning they cannot be changed
 
 This is a List
 monday_temperatures2 = [1, 4, 5]
@@ -213,11 +219,13 @@ monday_temperatures2 = [1, 4, 5]
 monday_temperatures2.append(9)
 The List is now:  [1, 4, 5, 9]
 
+Lists and Dictonaries are mutable
+
 This is a Dictonary
 monday_temperatures3 = {"temp1": 1, "temp2": 4, "temp3": 5}
-{'temp3': 5, 'temp1': 1, 'temp2': 4}
+{'temp1': 1, 'temp2': 4, 'temp3': 5}
 
 output of the dict.values in a for loop
-5
 1
 4
+5
