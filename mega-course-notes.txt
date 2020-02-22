@@ -322,3 +322,53 @@ Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 ValueError: 8.8 is not in list
 >>>
+
+Coding Excercise 13. Append Item to List (E)
+Append the value if current to the end of the list seconds. Please use the list.append() method to do that.
+
+seconds = [1.2323442655, 1.4534345567, 1.023458894]
+current = 1.10001399445
+seconds.append(current)
+
+Coding Excercise 14. Remove Item from List (E)
+Remove item 1.4534345567 from seconds
+
+seconds = [1.2323442655, 1.4534345567, 1.023458894, 1.10001399445]
+seconds.remove(1.4534345567)
+
+Coding Excercise 15. Remove Three Items from List (E)
+Remove Items 1.4534345567, 1.023458894 ,and 1.10001399445 from seconds
+
+seconds = [1.2323442655, 1.4534345567, 1.023458894, 1.10001399445]
+seconds = [1.2323442655, 1.4534345567, 1.023458894, 1.10001399445]
+seconds.remove(1.4534345567)
+seconds.remove(1.023458894)
+seconds.remove(1.10001399445)
+
+26. Accessing List Items
+
+>>> monday_temperatures.__getitem__(1)
+8.8
+>>> monday_temperatures[1]             
+8.8
+>>>
+
+Coding Excercise 16. Access Item (E)
+Complete the script so that it prints out the 3rd item of list serials
+
+serials = ["RH80810A", "AA899819A", "XYSA9099400", "OOP8988459", "EEO8904882", "KOC9889482"]
+print(serials[2])
+
+Coding Excercise 17. Access Items (E)
+Complete the script so that it prints out the 1st, the 3rd, and the 6th items of list serials
+
+serials = ["RH80810A", "AA899819A", "XYSA9099400", "OOP8988459", "EEO8904882", "KOC9889482"]
+print(serials[0], serials[2], serials[5])
+
+Coding Excercise 18. Access and Append (E)
+Append the first item of weekend to workdays.
+
+workdays = ["Mon", "Tue", "Wed", "Thu", "Fri"]
+weekend = ["Sat", "Sun"]
+workdays.append(weekend[0])
+
