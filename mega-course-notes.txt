@@ -543,3 +543,4 @@ def foo(oz):
 
 33. Print or Return?
 .\Section5\mean.py  # updated
+N.B. Always use return in your functions
