@@ -540,3 +540,6 @@ called it with foo(5) I would get 147.86765, and so on.
 
 def foo(oz):
     return oz * 29.57353
+
+33. Print or Return?
+.\Section5\mean.py  # updated
