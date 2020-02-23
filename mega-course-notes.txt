@@ -503,6 +503,40 @@ days[:-2]
 Output: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri'] 
 A single in a dictionary can be accessed using its key:
 
-phone_numbers = {"John Smith":"+37682929928","Marry Simpons":"+423998200919"}
+phone_numbers = {"John Smith":"+37682929928","Marry Simpsons":"+423998200919"}
 phone_numbers["Marry Simpsons"]
 Output: '+423998200919'
+
+# Section 5: The Basics: Functions and Conditionals
+
+Coding Excercise 22. Lengther (E)
+Complete the lengther function definition so that is returns the number of items for every input 1st.
+Note. You don't have to call the function unless you are explicitly required to do so.  Definin the 
+function is enough.  However, if you like to call your function under your function definition, that's
+fine too.
+
+def lengther(lst):
+    return len(lst)
+
+Coding Excercise 23. Square Area (E)
+Define a function that calculates the area of a sqaure.
+For example, if I was to call your function with foo(7) the output would be 49.  If I called it with 
+foo(3) it would return 9, and so on.
+Note that you don't have to name your function foo.  Give it any name you want.
+
+def foo(i):
+    i = i * i
+    return i
+
+Solution.py was
+
+def foo(a):
+    return a * a
+
+Coding Excercise 24. Volume Converter (E)
+Define a function that converts fluid ounces to mililitres knowing that 1 fluid ounce is equal to 29.57353 
+mililitres.  For example, I was to call your function with foo(1) I would get an output of 29.57353.  If I
+called it with foo(5) I would get 147.86765, and so on.
+
+def foo(oz):
+    return oz * 29.57353
