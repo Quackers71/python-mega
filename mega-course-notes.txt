@@ -544,3 +544,15 @@ def foo(oz):
 33. Print or Return?
 .\Section5\mean.py  # updated
 N.B. Always use return in your functions
+
+34. Intro to Conditionals
+
+PS C:\Users\Rob\Desktop\AWS EC2\python-mega> python .\Section5\mean.py
+Function started!
+Traceback (most recent call last):
+  File ".\Section5\mean.py", line 7, in <module>
+    print(mean(student_grades))
+  File ".\Section5\mean.py", line 3, in mean
+    the_mean = sum(mylist) / len(mylist)
+TypeError: unsupported operand type(s) for +: 'int' and 'str'
+
