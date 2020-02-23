@@ -413,3 +413,43 @@ workdays.append(weekend[0])
 'hello'
 >>> monday_temperatures[0][2]
 'l'
+
+Quiz 1: Accessing and Slicing Listrs and Strings
+
+Question 1:
+What would the following code return?
+'abcdef'[:3]
+Answer : 'abc'
+
+Question 2:
+Which of the following outputs 'cd'?
+Answer : 'abcdef'[2:4]
+
+Question 3:
+Select the correct output for 'abcdef'[-2:]
+Answer : 'ef'
+
+Question 4:
+What does the code ['abc' , 'def', 'ghi', 'jkl', 'mno'][-2][-2] output?
+Answer : 'k'
+
+Great job! You are ready to move on to the next lecture.
+You got 4 out of 4 correct on the first attempt.
+
+Coding Excercise 19. Slicing a List, 2nd to 4th (E)
+Print out the slice ['b', 'c', 'd'] of the letters list
+
+letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
+print(letters[1:4])
+
+Coding Excercise 20. Slicing a List, First Three (E)
+Print out the slice ['a', 'b', 'c'] of the letters list
+
+letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
+print(letters[:3])
+
+Coding Excercise 21. Slicing a List, Last Three (E)
+Print out the slice ['e', 'f', 'g'] of the letters list
+
+letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
+print(letters[-3:])
