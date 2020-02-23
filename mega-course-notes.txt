@@ -372,7 +372,7 @@ workdays = ["Mon", "Tue", "Wed", "Thu", "Fri"]
 weekend = ["Sat", "Sun"]
 workdays.append(weekend[0])
 
-27. Accessing List Slices
+27. Accessing List Slices 
 
 >>> monday_temperatures = [9.1, 8.8, 7.5, 6.6, 9.9] 
 >>> len(monday_temperatures)
@@ -389,9 +389,16 @@ workdays.append(weekend[0])
 [9.1, 8.8]
 >>> monday_temperatures[:2]
 [9.1, 8.8]
+
+28. Accessing Items and Slices with Negative Indexes
+
 >>> monday_temperatures[-1] 
 9.9
 >>> monday_temperatures[-2:] 
 [6.6, 9.9]
 >>> monday_temperatures[-4:-2] 
 [8.8, 7.5]
+
+29. Accessing Characters and Slices in Strings
+
+monday_temperatures = ['hello', 1, 2, 3]
