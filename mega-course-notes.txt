@@ -589,3 +589,7 @@ if x == 1 or y==2:
 else:
     print("No")
 That will return Yes since at least one of the conditions is True. In this case x == 1 is True.
+
+37. Conditional Explained Line by Line
+.\Section5\mean.py  # updated
+Now running the function for the dictionary
