@@ -556,3 +556,6 @@ Traceback (most recent call last):
     the_mean = sum(mylist) / len(mylist)
 TypeError: unsupported operand type(s) for +: 'int' and 'str'
 
+35. If Conditional Example
+.\Section5\mean.py  # updated
+Now contains an if / else
