@@ -295,3 +295,452 @@ Documentation for a Python command can be found with:
 help(str)
 help(str.replace)
 help(dict.values)
+
+## Section 4: The Basics: Operations with Data Types
+
+25. More Operations with Lists
+
+PS C:\Users\Rob\Desktop\AWS EC2\python-mega> python
+Python 3.5.0 (v3.5.0:374f501f4567, Sep 13 2015, 02:27:37) [MSC v.1900 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> monday_temperatures = [9.1, 8.8, 7.5]
+>>> monday_temperatures.append(8.1)  
+>>> monday_temperatures
+[9.1, 8.8, 7.5, 8.1]
+>>> monday_temperatures.clear()     
+>>> monday_temperatures
+[]  
+>>> monday_temperatures = [9.1, 8.8, 7.5]
+>>> monday_temperatures                   
+[9.1, 8.8, 7.5]
+>>> monday_temperatures.index(8.8) 
+1   
+>>> monday_temperatures.index(8.8, 1) 
+1   
+>>> monday_temperatures.index(8.8, 2)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: 8.8 is not in list
+>>>
+
+Coding Excercise 13. Append Item to List (E)
+Append the value if current to the end of the list seconds. Please use the list.append() method to do that.
+
+seconds = [1.2323442655, 1.4534345567, 1.023458894]
+current = 1.10001399445
+seconds.append(current)
+
+Coding Excercise 14. Remove Item from List (E)
+Remove item 1.4534345567 from seconds
+
+seconds = [1.2323442655, 1.4534345567, 1.023458894, 1.10001399445]
+seconds.remove(1.4534345567)
+
+Coding Excercise 15. Remove Three Items from List (E)
+Remove Items 1.4534345567, 1.023458894 ,and 1.10001399445 from seconds
+
+seconds = [1.2323442655, 1.4534345567, 1.023458894, 1.10001399445]
+seconds = [1.2323442655, 1.4534345567, 1.023458894, 1.10001399445]
+seconds.remove(1.4534345567)
+seconds.remove(1.023458894)
+seconds.remove(1.10001399445)
+
+26. Accessing List Items
+
+>>> monday_temperatures.__getitem__(1)
+8.8
+>>> monday_temperatures[1]             
+8.8
+>>>
+
+Coding Excercise 16. Access Item (E)
+Complete the script so that it prints out the 3rd item of list serials
+
+serials = ["RH80810A", "AA899819A", "XYSA9099400", "OOP8988459", "EEO8904882", "KOC9889482"]
+print(serials[2])
+
+Coding Excercise 17. Access Items (E)
+Complete the script so that it prints out the 1st, the 3rd, and the 6th items of list serials
+
+serials = ["RH80810A", "AA899819A", "XYSA9099400", "OOP8988459", "EEO8904882", "KOC9889482"]
+print(serials[0], serials[2], serials[5])
+
+Coding Excercise 18. Access and Append (E)
+Append the first item of weekend to workdays.
+
+workdays = ["Mon", "Tue", "Wed", "Thu", "Fri"]
+weekend = ["Sat", "Sun"]
+workdays.append(weekend[0])
+
+27. Accessing List Slices 
+
+>>> monday_temperatures = [9.1, 8.8, 7.5, 6.6, 9.9] 
+>>> len(monday_temperatures)
+5
+>>> monday_temperatures[2]     
+7.5
+>>> monday_temperatures[1:4] 
+[8.8, 7.5, 6.6]
+>>> monday_temperatures[3:5] 
+[6.6, 9.9]
+>>> monday_temperatures[3:]  
+[6.6, 9.9]
+>>> monday_temperatures[0:2] 
+[9.1, 8.8]
+>>> monday_temperatures[:2]
+[9.1, 8.8]
+
+28. Accessing Items and Slices with Negative Indexes
+
+>>> monday_temperatures[-1] 
+9.9
+>>> monday_temperatures[-2:] 
+[6.6, 9.9]
+>>> monday_temperatures[-4:-2] 
+[8.8, 7.5]
+
+29. Accessing Characters and Slices in Strings
+
+>>> mystring = "Hello"
+>>> mystring[1]
+'e'
+>>> mystring[-1] 
+'o'
+>>> mystring[:3] 
+'Hel'
+>>> monday_temperatures = ['hello', 1, 2, 3]
+>>> monday_temperatures[0]    
+'hello'
+>>> monday_temperatures[0][2]
+'l'
+
+Quiz 1: Accessing and Slicing Listrs and Strings
+
+Question 1:
+What would the following code return?
+'abcdef'[:3]
+Answer : 'abc'
+
+Question 2:
+Which of the following outputs 'cd'?
+Answer : 'abcdef'[2:4]
+
+Question 3:
+Select the correct output for 'abcdef'[-2:]
+Answer : 'ef'
+
+Question 4:
+What does the code ['abc' , 'def', 'ghi', 'jkl', 'mno'][-2][-2] output?
+Answer : 'k'
+
+Great job! You are ready to move on to the next lecture.
+You got 4 out of 4 correct on the first attempt.
+
+Coding Excercise 19. Slicing a List, 2nd to 4th (E)
+Print out the slice ['b', 'c', 'd'] of the letters list
+
+letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
+print(letters[1:4])
+
+Coding Excercise 20. Slicing a List, First Three (E)
+Print out the slice ['a', 'b', 'c'] of the letters list
+
+letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
+print(letters[:3])
+
+Coding Excercise 21. Slicing a List, Last Three (E)
+Print out the slice ['e', 'f', 'g'] of the letters list
+
+letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
+print(letters[-3:])
+
+30. Accessing Items in Dictionaries
+
+>>> student_grades = {"Kylie": 9.1, "Eva": 8.8, "Tarquin": 7.5}
+>>> student_grades.keys() 
+dict_keys(['Kylie', 'Tarquin', 'Eva'])
+>>> student_grades.values() 
+dict_values([9.1, 7.5, 8.8])
+>>> eng_port = {"rain": "chuva", "sun": "sol"}
+>>> eng_port["sun"]
+'sol'
+
+31. Summary: Positive/Negative Indexes, Slicing
+In this section you learned that:
+
+Lists, strings, and tuples have a positive index system:
+
+["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+   0      1      2      3      4      5      6
+And a negative index system:
+
+["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+  -7     -6     -5     -4     -3     -2     -1
+In a list, the 2nd, 3rd, and 4th items can be accessed with:
+
+days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+days[1:4]
+Output: ['Tue', 'Wed', 'Thu']
+First three items of a list:
+
+days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+days[:3]
+Output:['Mon', 'Tue', 'Wed'] 
+Last three items of a list:
+
+days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+days[-3:]
+Output: ['Fri', 'Sat', 'Sun']
+Everything but the last:
+
+days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+days[:-1] 
+Output: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'] 
+Everything but the last two:
+
+days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+days[:-2] 
+Output: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri'] 
+A single in a dictionary can be accessed using its key:
+
+phone_numbers = {"John Smith":"+37682929928","Marry Simpsons":"+423998200919"}
+phone_numbers["Marry Simpsons"]
+Output: '+423998200919'
+
+# Section 5: The Basics: Functions and Conditionals
+
+Coding Excercise 22. Lengther (E)
+Complete the lengther function definition so that is returns the number of items for every input 1st.
+Note. You don't have to call the function unless you are explicitly required to do so.  Definin the 
+function is enough.  However, if you like to call your function under your function definition, that's
+fine too.
+
+def lengther(lst):
+    return len(lst)
+
+Coding Excercise 23. Square Area (E)
+Define a function that calculates the area of a sqaure.
+For example, if I was to call your function with foo(7) the output would be 49.  If I called it with 
+foo(3) it would return 9, and so on.
+Note that you don't have to name your function foo.  Give it any name you want.
+
+def foo(i):
+    i = i * i
+    return i
+
+Solution.py was
+
+def foo(a):
+    return a * a
+
+Coding Excercise 24. Volume Converter (E)
+Define a function that converts fluid ounces to mililitres knowing that 1 fluid ounce is equal to 29.57353 
+mililitres.  For example, I was to call your function with foo(1) I would get an output of 29.57353.  If I
+called it with foo(5) I would get 147.86765, and so on.
+
+def foo(oz):
+    return oz * 29.57353
+
+33. Print or Return?
+.\Section5\mean.py  # updated
+N.B. Always use return in your functions
+
+34. Intro to Conditionals
+
+PS C:\Users\Rob\Desktop\AWS EC2\python-mega> python .\Section5\mean.py
+Function started!
+Traceback (most recent call last):
+  File ".\Section5\mean.py", line 7, in <module>
+    print(mean(student_grades))
+  File ".\Section5\mean.py", line 3, in mean
+    the_mean = sum(mylist) / len(mylist)
+TypeError: unsupported operand type(s) for +: 'int' and 'str'
+
+35. If Conditional Example
+.\Section5\mean.py  # updated
+Now contains an if / else
+
+36. Bonus Code: Using "and" and "or" in a Conditional
+
+You learned to check for one single condition:
+x = 1
+ 
+if x == 1:
+    print("Yes")
+else:
+    print("No")
+
+You can also check if two conditions are met at the same time using an and operator:
+x = 1
+y = 1
+ 
+if x == 1 and y==1:
+    print("Yes")
+else:
+    print("No")
+That will return Yes since x == 1 and y ==1 are both True.
+
+You can also check if one of two conditions are met using an or operator:
+x = 1
+y = 1
+ 
+if x == 1 or y==2:
+    print("Yes")
+else:
+    print("No")
+That will return Yes since at least one of the conditions is True. In this case x == 1 is True.
+
+37. Conditional Explained Line by Line
+.\Section5\mean.py  # updated
+Now running the function for the dictionary
+
+Quiz 2. Conditionals Quiz
+
+Question 1:
+What does the following code output?
+
+x = -10
+if x * 2 > x:
+    print("Greater")
+else:
+    print("Less or Equal")
+
+Answer : Less or Equal
+x is -10 and x * 2 would be -20 and -20 is not greater than -10.
+
+Question 2:
+What would the following code output?
+
+def foo(x, array):
+    if x in array:
+        return True
+    else:
+        return False
+ 
+print(foo(1, [1, 2, 3]))
+print(foo(1, [2, 3]))
+print(foo(1, ['1', 2, 3]))
+
+Answer :
+True
+False
+False
+1 is actually in the list [1, 2, 3], therefore, the first output is True. 1 is not in [2, 3], 
+so the second output is False. 1 is not in ['1', 2, 3], so the third output is also False. 
+Note the third list has '1', but not 1. 1 is not the same as '1'. They are of different types.
+
+Question 3:
+Check the code that has a correct syntax.
+
+Answer : #4 
+def check_username(username):
+    if len(username) > 4:
+        return "Successfull!"
+    else:
+        return "Try another username"
+
+Question 4:
+What is true about the following code?
+
+if isinstance(x, int) or isinstance(x, float) or x=='1':
+    print("Valid type!")
+else:
+    print("Not valid!")
+
+Answer : The code prints out Valid type! if x has a value of '1'.
+Correct! If any of the conditions in line 1 is met, the code will execute line 2. In other words, 
+if x has a value of '1' that means one of the conditions in line 1 was met.
+
+Great job! You are ready to move on to the next lecture.
+You got 4 out of 4 correct on the first attempt.
+
+38. More on Conditionals
+
+PS C:\Users\Rob\Desktop\AWS EC2\python-mega> python .\Section5\mean.py
+mean(student_grades) : 8.466666666666667
+3 is greater than 1
+type(3) == int : True
+isinstance(3, int) : True
+
+Coding Excercise 25. Password Controller (E)
+Define a function that:
+(1) takes a string as a parameter
+(2) returns False if the string contains less than 8 characters
+(3) returns True if the string contains 8 or more characters
+If I called your function with foo(mypass) it would return.  If I called it foo("mylongpassword") 
+it would return True, and so on.
+
+Coding Excercise 26. Warm or Cold (E)
+Define a function that:
+(1) takes a temperature as a parameter
+(2) returns Warm if the temperature is greater than 7
+(3) returns Cold if the temperature is equal or less than 7
+If I called your function with foo(10) it would return Warm.  If I called it foo(7) or foo(5)
+it would return Cold in both cases, and so on.
+
+Coding Excercise 27. Hot, Warm, Cold (E)
+Define a function that:
+(1) takes a temperature as a parameter
+(2) returns Hot if the temperature is greater than 25
+(3) returns Warm if the temperature is between 15 and 25, including 15 and 25.
+(4) returns Cold if the temperature is less than 15
+If I called your function with foo(10) it would return Cold.  
+foo(15) or foo(16) or foo(25) would all return Warm and foo(26) would return Hot.
+
+41. Summary of Section5: Functions and Conditionals
+In this section you learned to:
+
+Define a function:
+
+def cube_volume(a):
+    return a * a * a
+Write a conditional block:
+
+message = "hello there"
+ 
+if "hello" in message:
+    print("hi")
+else:
+    print("I don't understand")
+Write a conditional block of multiple conditions:
+
+message = "hello there"
+ 
+if "hello" in message:
+    print("hi")
+elif "hi" in message:
+    print("hi")
+elif "hey" in message:
+    print("hi")
+else:
+    print("I don't understand")
+Use the and operator to check if both conditions are True at the same time:
+
+x = 1
+y = 1
+ 
+if x == 1 and y==1:
+    print("Yes")
+else:
+    print("No")
+Output is Yes since both x and y are 1.
+
+Use the or operator to check if at least one condition is True:
+
+x = 1
+y = 2
+ 
+if x == 1 or y==2:
+    print("Yes")
+else:
+    print("No")
+Output is Yes since x is 1.
+
+Check if a value is of a certain type with:
+
+isinstance("abc", str)
+isinstance([1, 2, 3], list)
+or
+
+type("abc") == str
+type([1, 2, 3]) == lst
