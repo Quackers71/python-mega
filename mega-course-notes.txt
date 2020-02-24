@@ -593,3 +593,63 @@ That will return Yes since at least one of the conditions is True. In this case 
 37. Conditional Explained Line by Line
 .\Section5\mean.py  # updated
 Now running the function for the dictionary
+
+Quiz 2. Conditionals Quiz
+
+Question 1:
+What does the following code output?
+
+x = -10
+if x * 2 > x:
+    print("Greater")
+else:
+    print("Less or Equal")
+
+Answer : Less or Equal
+x is -10 and x * 2 would be -20 and -20 is not greater than -10.
+
+Question 2:
+What would the following code output?
+
+def foo(x, array):
+    if x in array:
+        return True
+    else:
+        return False
+ 
+print(foo(1, [1, 2, 3]))
+print(foo(1, [2, 3]))
+print(foo(1, ['1', 2, 3]))
+
+Answer :
+True
+False
+False
+1 is actually in the list [1, 2, 3], therefore, the first output is True. 1 is not in [2, 3], 
+so the second output is False. 1 is not in ['1', 2, 3], so the third output is also False. 
+Note the third list has '1', but not 1. 1 is not the same as '1'. They are of different types.
+
+Question 3:
+Check the code that has a correct syntax.
+
+Answer : #4 
+def check_username(username):
+    if len(username) > 4:
+        return "Successfull!"
+    else:
+        return "Try another username"
+
+Question 4:
+What is true about the following code?
+
+if isinstance(x, int) or isinstance(x, float) or x=='1':
+    print("Valid type!")
+else:
+    print("Not valid!")
+
+Answer : The code prints out Valid type! if x has a value of '1'.
+Correct! If any of the conditions in line 1 is met, the code will execute line 2. In other words, 
+if x has a value of '1' that means one of the conditions in line 1 was met.
+
+Great job! You are ready to move on to the next lecture.
+You got 4 out of 4 correct on the first attempt.
