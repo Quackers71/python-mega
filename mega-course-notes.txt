@@ -677,3 +677,13 @@ Define a function that:
 (3) returns Cold if the temperature is equal or less than 7
 If I called your function with foo(10) it would return Warm.  If I called it foo(7) or foo(5)
 it would return Cold in both cases, and so on.
+
+Coding Excercise 27. Hot, Warm, Cold (E)
+Define a function that:
+(1) takes a temperature as a parameter
+(2) returns Hot if the temperature is greater than 25
+(3) returns Warm if the temperature is between 15 and 25, including 15 and 25.
+(4) returns Cold if the temperature is less than 15
+If I called your function with foo(10) it would return Cold.  
+foo(15) or foo(16) or foo(25) would all return Warm and foo(26) would return Hot.
+it would return Cold in both cases, and so on.
