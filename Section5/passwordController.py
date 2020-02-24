@@ -6,6 +6,6 @@ def foo(passwd):
         mypasswd = print("This is incorrect!")
         return False
 
-    return type(mypasswd)
+    return mypasswd
 
 foo("adkj")
