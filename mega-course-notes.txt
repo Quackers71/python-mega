@@ -653,3 +653,11 @@ if x has a value of '1' that means one of the conditions in line 1 was met.
 
 Great job! You are ready to move on to the next lecture.
 You got 4 out of 4 correct on the first attempt.
+
+38. More on Conditionals
+
+PS C:\Users\Rob\Desktop\AWS EC2\python-mega> python .\Section5\mean.py
+mean(student_grades) : 8.466666666666667
+3 is greater than 1
+type(3) == int : True
+isinstance(3, int) : True
