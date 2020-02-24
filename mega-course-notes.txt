@@ -744,3 +744,13 @@ or
 
 type("abc") == str
 type([1, 2, 3]) == lst
+
+# Section 6: The Basics: Processing User Input
+
+42. User Input
+PS C:\Users\Rob\Desktop\AWS EC2\python-mega> python .\Section6\userInput.py
+Enter a temperature :7
+Cold
+PS C:\Users\Rob\Desktop\AWS EC2\python-mega> python .\Section6\userInput.py
+Enter a temperature :7.2
+Warm
