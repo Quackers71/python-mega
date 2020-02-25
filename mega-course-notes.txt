@@ -1,3 +1,25 @@
+# Add this to your ~/.bashrc if you wish
+
+# Q Alias commands
+alias ..="cd .."
+alias qh="cd /home/Quackers/"
+alias l="ls -la"
+alias ll="ls -la"
+                                                                                                                                                                                       
+alias gs="git status"
+alias gpus="git push"
+alias gpo="git push origin $1"
+alias ga.="git add ."
+alias gaa="git add --all"
+alias gcm="git commit -m $1"
+alias gcam="git commit -am $1"
+alias gdf="git diff $1"
+alias gpul="git pull"
+alias grh="git reset --hard $1"
+alias gl="git log"
+alias glg='git log --pretty=format:"%h %s" --graph'
+alias gc="git checkout $1"
+
 
 Source: The Python Mega Course: https://udemy.com/the-python-mega-course/
 
@@ -744,3 +766,13 @@ or
 
 type("abc") == str
 type([1, 2, 3]) == lst
+
+# Section 6: The Basics: Processing User Input
+
+42. User Input
+PS C:\Users\Rob\Desktop\AWS EC2\python-mega> python .\Section6\userInput.py
+Enter a temperature :7
+Cold
+PS C:\Users\Rob\Desktop\AWS EC2\python-mega> python .\Section6\userInput.py
+Enter a temperature :7.2
+Warm
