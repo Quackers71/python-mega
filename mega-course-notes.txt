@@ -776,3 +776,67 @@ Cold
 PS C:\Users\Rob\Desktop\AWS EC2\python-mega> python .\Section6\userInput.py
 Enter a temperature :7.2
 Warm
+
+
+Coding Excercise 28. String Formatting (E)
+
+Implement a function that gets a person's name as a parameter and greets the person with Hi Person. For example, 
+if I called your function with foo("Smithy") the function should return Hi Smithy.
+
+Note: If you were to use the f"string" syntax for this exercise you would get an error because f-strings were
+introduced in Python 3.6 and the Udemy server uses Python 3.5.  You might want to use the "%s" syntax instead 
+which works with the older versions of Python.  This scenario actually happens often in real lift where servers 
+might have an older version of Python so you should be aware and adjust your code accordingly.  You can review 
+the string formatting lecture if you forgot the syntax. 
+- https://www.udemy.com/course/the-python-mega-course/learn/lecture/15584244#overview
+
+def foo(name):
+    return "Hi %s" % name
+
+foo("Smithy")
+
+Coding Excercise 29. String Formatting and Uppercase (E)
+
+Implement a function that gets a person's name as a parameter and greets the person with Hi Person. The first 
+letter should always be uppercase.  For example, if I called your function with foo("Smithy") or foo("smithy")
+the function should return Hi Smithy.
+
+Note: If you were to use the f"string" syntax for this exercise you would get an error because f-strings were
+introduced in Python 3.6 and the Udemy server uses Python 3.5.  You might want to use the "%s" syntax instead 
+which works with the older versions of Python.  This scenario actually happens often in real lift where servers 
+might have an older version of Python so you should be aware and adjust your code accordingly.  You can review 
+the string formatting lecture if you forgot the syntax. 
+- https://www.udemy.com/course/the-python-mega-course/learn/lecture/15584244#overview
+
+def foo(name):
+    return "Hi %s" % name.title()
+
+foo("smithy")
+
+45. Summary: Processing User Input
+In this section you learned that:
+
+A Python program can get user input via the input function:
+
+The input function halts the execution of the program and gets text input from the user:
+
+name = input("Enter your name: ")
+The input function converts any input to a string, but you can convert it back to int or float:
+
+experience_months = input("Enter your experience in months: ")
+experience_years = int(experience_months) / 12
+You can format strings with (works both on Python 2 and 3):
+
+name = "Sim"
+experience_years = 1.5
+print("Hi %s, you have %s years of experience." % (name, experience_years))
+
+Output: Hi Sim, you have 1.5 years of experience.
+
+You can also format strings with (Python 3 only):
+
+name = "Sim"
+experience_years = 1.5
+print("Hi {}, you have {} years of experience".format(name, experience_years))
+
+Output: Hi Sim, you have 1.5 years of experience.
