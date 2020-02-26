@@ -840,3 +840,83 @@ experience_years = 1.5
 print("Hi {}, you have {} years of experience".format(name, experience_years))
 
 Output: Hi Sim, you have 1.5 years of experience.
+
+Coding Excercise 30: Loop Over Colours (E)
+Loop over the colours items and print the item in every loop.  So, the expected
+output of your code would be:
+11
+34
+98
+43
+45
+54
+54
+
+colours = [11, 34, 98, 43, 45, 54, 54]
+
+for cl in colours:
+    print(cl)
+
+Coding Excercise 31: Loop Over Big Colours (E)
+Loop over the colours items and print the item in every loop only if the item is greater then 50.  
+So, the expected output of your code would be:
+98
+54
+54
+
+colours = [11, 34, 98, 43, 45, 54, 54]
+
+for cl in colours:
+    if cl > 50:
+        print(cl)
+
+Coding Excercise 32: Loop Over Integer Colours (E)
+Loop over the colours items and print the item in every loop only if the item is an integer.  
+So, the expected output of your code would be:
+11
+43
+54
+54
+
+colours = [11, 34.1, 98.2, 43, 45.1, 54, 54]
+
+for cl in colours:
+    if isinstance(cl, int):
+        print(cl)
+
+Coding Excercise 33: Loop Over Integer and BIg Colours (E)
+Loop over the colours items and print the item in every loop only if the item is an integer and 
+is greater than 50.  So, the expected output of your code would be:
+54
+54
+
+colours = [11, 34.1, 98.2, 43, 45.1, 54, 54]
+
+for cl in colours:
+    if isinstance(cl, int):
+        print(cl)
+
+47. For Loop Over a Function
+Note that using loops you can call any function multiple times, even your own functions. Let's suppose we defined this function:
+
+def celsius_to_kelvin(cels):
+    return cels + 273.15
+That is a function that gets a number as input, adds 273.15 to it and returns the result. A for loop allows us to execute that function over a list of numbers:
+
+monday_temperatures = [9.1, 8.8, -270.15]
+ 
+for temperature in monday_temperatures:
+    print(celsius_to_kelvin(temperature))
+The output of that would be:
+
+282.25
+281.95
+3.0
+
+So, in the first iteration celsius_to_kelvin(9.1) was executed, in the second celsius_to_kelvin(8.8) and in the third celsius_to_kelvin(-270.15).
+
+That's just something to keep in mind.
+
+48. Did You Know?
+Python comes pre-installed on Linux and Mac operating systems. In May 2019, Windows 10 also launched an update which also have Python pre-installed. 
+That is an added endorsement for Python.
