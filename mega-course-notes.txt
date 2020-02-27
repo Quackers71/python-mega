@@ -920,3 +920,44 @@ That's just something to keep in mind.
 48. Did You Know?
 Python comes pre-installed on Linux and Mac operating systems. In May 2019, Windows 10 also launched an update which also have Python pre-installed. 
 That is an added endorsement for Python.
+
+50. Bonus Code: Dictionary Loop and String Formatting
+You can combine a dictionary for loop with string formatting to create text containing information from the dictionary:
+
+phone_numbers = {"John Smith": "+37682929928", "Marry Simpons": "+423998200919"}
+ 
+for pair in phone_numbers.items():
+    print("{} has as phone number {}".format(pair[0], pair[1]))
+
+
+Another (better) way to do it::
+
+phone_numbers = {"John Smith": "+37682929928", "Marry Simpons": "+423998200919"}
+ 
+for key, value in phone_numbers.items():
+    print("{} has as phone number {}".format(key, value))
+In both cases the output is:
+
+Output:
+
+John Smith has as phone number +37682929928
+
+Marry Simpons has as phone number +423998200919
+
+Coding Excercise 34: Loop Over Dictionary and Format (E)
+
+Make the code print out the following output using a for loop:
+
+John Smith: +37682929928
+Marry Simpons: +423998200919
+
+So, the code should loop over the dictionary items and in each iteration should print 
+out the dictionary key, a colon, a space, and the corresponding value.
+
+Note: If you plan to use string formatting here, please be aware that Udemy uses Python 
+3.5 and the f"{}" syntax only works with Python 3.6+. Consider using the "%s" syntax instead.
+
+phone_numbers = {"John Smith": "+37682929928", "Marry Simpons": "+423998200919"}
+
+for details in phone_numbers.items():
+    print("%s: %s" % (details[0], details[1]))
