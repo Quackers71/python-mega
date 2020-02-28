@@ -441,19 +441,19 @@ Quiz 1: Accessing and Slicing Listrs and Strings
 Question 1:
 What would the following code return?
 'abcdef'[:3]
-Answer : 'abc'
+Answer: 'abc'
 
 Question 2:
 Which of the following outputs 'cd'?
-Answer : 'abcdef'[2:4]
+Answer: 'abcdef'[2:4]
 
 Question 3:
 Select the correct output for 'abcdef'[-2:]
-Answer : 'ef'
+Answer: 'ef'
 
 Question 4:
 What does the code ['abc' , 'def', 'ghi', 'jkl', 'mno'][-2][-2] output?
-Answer : 'k'
+Answer: 'k'
 
 Great job! You are ready to move on to the next lecture.
 You got 4 out of 4 correct on the first attempt.
@@ -627,7 +627,7 @@ if x * 2 > x:
 else:
     print("Less or Equal")
 
-Answer : Less or Equal
+Answer: Less or Equal
 x is -10 and x * 2 would be -20 and -20 is not greater than -10.
 
 Question 2:
@@ -643,7 +643,7 @@ print(foo(1, [1, 2, 3]))
 print(foo(1, [2, 3]))
 print(foo(1, ['1', 2, 3]))
 
-Answer :
+Answer:
 True
 False
 False
@@ -654,7 +654,7 @@ Note the third list has '1', but not 1. 1 is not the same as '1'. They are of di
 Question 3:
 Check the code that has a correct syntax.
 
-Answer : #4 
+Answer: #4 
 def check_username(username):
     if len(username) > 4:
         return "Successfull!"
@@ -669,7 +669,7 @@ if isinstance(x, int) or isinstance(x, float) or x=='1':
 else:
     print("Not valid!")
 
-Answer : The code prints out Valid type! if x has a value of '1'.
+Answer: The code prints out Valid type! if x has a value of '1'.
 Correct! If any of the conditions in line 1 is met, the code will execute line 2. In other words, 
 if x has a value of '1' that means one of the conditions in line 1 was met.
 
@@ -961,3 +961,62 @@ phone_numbers = {"John Smith": "+37682929928", "Marry Simpons": "+423998200919"}
 
 for details in phone_numbers.items():
     print("%s: %s" % (details[0], details[1]))
+
+Coding Excercise 35: Loop Over Dictionary and Replace (E)
+
+Loop over the phone_numbers values and in each loop print out the phone number, but 
+with '00' instead of '+'.  In other words, your code should output:
+
+0037682929928
+00423998200919
+
+phone_numbers = {"John Smith": "+37682929928", "Marry Simpons": "+423998200919"}
+
+for details in phone_numbers.items():
+    print("%s" % (details[1]).replace('+', '00'))
+    #print("{}").format(details[1]).replace('+', '00')
+
+Quiz 3. While loops
+
+Question 1:
+What will the following code output?
+
+a = 10
+while a > 0:
+    x = a + 1
+    print(x)
+
+Answer: 
+11
+11
+11
+11
+11
+
+Good job!
+The while loop checks if a is greater than 0. That's always true since a is 10. 
+Then the loops performs x = 10 + 1 and then prints x which happens to be 11, always.
+
+Question 2:
+What does the following code output?
+
+a = 0
+while a < 5:
+    a = a + 1
+    print(a)
+
+Answer: 
+1
+2
+3
+4
+5
+
+Good job!
+At first a is 0. The loop checks if a is less than 5, which is true in the first iteration. 
+Then, a = a + 1 adds 1 to a, so now a is 1 and 1 is printed out. The next loop does a = 1 + 1 so a becomes 2. 
+The third loop does a = 2 + 1, so a becomes 3 and so the loop continues until a is not less than 5 anymore.
+
+Great job! You are ready to move on to the next lecture.
+You got 2 out of 2 correct on the first attempt.
+
