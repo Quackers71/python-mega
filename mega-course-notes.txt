@@ -1020,3 +1020,80 @@ The third loop does a = 2 + 1, so a becomes 3 and so the loop continues until a 
 Great job! You are ready to move on to the next lecture.
 You got 2 out of 2 correct on the first attempt.
 
+54. Summary: Loops
+In this section you learned that:
+
+For loops are useful for executing a command over a large number of items.
+
+You can create a for loop like so:
+
+for letter in 'abc':
+    print(letter.upper())
+Output:
+
+A
+B
+C
+
+The name after for (e.g. letter) is just a variable name
+
+
+
+You can loop over dictionary keys:
+
+phone_numbers = {"John Smith":"+37682929928","Marry Simpons":"+423998200919"}
+for value in phone_numbers.keys():
+    print(value)
+Output:
+
+John Smith
+Marry Simpsons
+
+You can loop over dictionary values:
+
+phone_numbers = {"John Smith":"+37682929928","Marry Simpons":"+423998200919"}
+for value in phone_numbers.values():
+    print(value)
+Output:
+
++37682929928
++423998200919
+
+You can loop over dictionary items:
+
+phone_numbers = {"John Smith":"+37682929928","Marry Simpons":"+423998200919"}
+for key, value in phone_numbers.items():
+    print(key, value)
+Output: 
+
+('John Smith', '+37682929928')
+
+('Marry Simpons', '+423998200919')
+
+
+
+While loops will run as long as a condition is true:
+
+while datetime.datetime.now() < datetime.datetime(2090, 8, 20, 19, 30, 20):
+    print("It's not yet 19:30:20 of 2090.8.20")
+The loop above will print out the string inside print() over and over again until the 20th of August, 2090.
+
+Tested the above using:
+
+import datetime
+
+while datetime.datetime.now() < datetime.datetime(2020, 2, 29, 9, 40, 00):
+    print("It's not yet 09:40:00 of 2020.2.29")
+
+Output:
+
+It's not yet 09:40:00 of 2020.2.29
+It's not yet 09:40:00 of 2020.2.29
+It's not yet 09:40:00 of 2020.2.29
+It's not yet 09:40:00 of 2020.2.29
+It's not yet 09:40:00 of 2020.2.29
+It's not yet 09:40:00 of 2020.2.29
+It's not yet 09:40:00 of 2020.2.29
+PS C:\Users\fcukq\Desktop\python-mega\Section7> date
+
+29 February 2020 09:40:02
