@@ -1097,3 +1097,14 @@ It's not yet 09:40:00 of 2020.2.29
 PS C:\Users\fcukq\Desktop\python-mega\Section7> date
 
 29 February 2020 09:40:02
+
+Section 8: Building a Program
+
+PS C:\Users\Rob\Desktop\AWS EC2\python-mega\Section8> py -3 .\textPro.py
+Say something: Hello
+Say something: how are you
+Say something: what day again
+Say something: why me
+Say something: bye
+Say something: \end
+Hello. How are you? What day again? Why me? Bye.
