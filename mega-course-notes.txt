@@ -1108,3 +1108,25 @@ Say something: why me
 Say something: bye
 Say something: \end
 Hello. How are you? What day again? Why me? Bye.
+
+Section 9: List Comprehensions
+
+60. Simple List Comprehension
+
+PS C:\Users\Rob\Desktop\AWS EC2\python-mega\Section9> py -3 .\preListComprehension.py 
+[22.1, 23.4, 34.0, 23.0]
+
+PS C:\Users\Rob\Desktop\AWS EC2\python-mega\Section9> py -3 .\listComprehension.py
+[22.1, 23.4, 34.0, 23.0]
+
+Coding Excercise 36: Only Numbers (E)
+
+Define a function that takes as a parameter a list that contains both numbers and strings and 
+returns the list containing only the numbers.  For example, if I called your function with 
+foo([99, 'no data', 95, 94, 'no data']) it should return [99, 95, 94]
+
+def foo(lst):
+    return [i for i in lst if not isinstance(i, str)]
+    
+foo([99, 'no data', 95, 94, 'no data'])
+
