@@ -1,0 +1,48 @@
+How can I learn to think on my own as a programmer?
+1
+Evan · Lecture 63 · 2 months ago
+I am a 20 year old junior computer science college student, and I feel a bit 
+down because after almost a year of programming, I still can't figure out how 
+to figure out problems on my own. I have Asperger's Syndrome, which is a form 
+of autism that makes me "wired differently" from other people; because of this 
+I also have some comprehension issues. I tend to keep relying on hints for the 
+questions here for help. I would not have even figured to instill "i" or "lst" 
+into the program I had to create for the answer to the problem on the screen 
+if it wasn't for the hints. I keep trying out this stuff on my own in class, 
+and take time for studying outside of the classroom (CodeCademy is how I got 
+into programming in the first place), but even then I feel like I need a person 
+explaining the step by step process of how to solve these problems to my face 
+to have a chance to understand some programming questions. I know a way to get 
+better at coding by myself is to practice, but I've been practicing for several 
+months, and still feel like I have the same issues. I want to improve as an 
+overall programmer, but I don't feel like I am doing so. I know I'm a novice 
+at this stuff, but how can I practice coding in a way that'll make sure I don't 
+have to feel like I need to hold someone else's hand throughout the process of 
+figuring out a situation for myself?
+
+David
+2 months ago
+
+Hi Evan. This is a very good question.
+
+I hear you when you say you're discouraged, and I myself have been where you are. 
+This feeling has been experienced by every dev who didn't begin as a 
+prodigy-whiz-kid-linus-torvalds-in-training.
+
+A super-common problem is that students/novices don't know how to ask a question 
+properly. You're clearly beyond that huge barrier to communication and learning.
+
+Q)  So, have you spent any time tackling small coding problems at codewars.com 
+(my favorite), hackerrank.com, or other "challenge" websites?
+
+There are many search-hits for "how to think like a coder". Most of those links 
+are to blogs and tutorials that try very hard to demonstrate exactly what you've 
+asked here today. I really like the video series at this link.
+
+Links:
+https://codewars.com/
+https://hackerrank.com/
+https://www.freecodecamp.org/news/the-10-most-popular-coding-challenge-websites-of-2016-fb8a5672d22f/
+
+https://duckduckgo.com/?q=%22how+to+think+like+a+coder%22&t=ffab&atb=v162-1&ia=web
+https://www.youtube.com/playlist?list=PLJicmE8fK0EgogMqDYMgcADT1j5b911or
