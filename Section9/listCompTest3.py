@@ -6,4 +6,4 @@ def foo(lst):
       
     return nums
 
-foo(['1.2', '2.6', '3.3'])
+print(foo([1.2, 2.6, 3.3]))
