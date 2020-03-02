@@ -1,20 +1,6 @@
 myfile = open("fruits.txt")
 content = myfile.read()
-print(content)
+myfile.close()
+
 print(content)
 
-''' Output:
-py -3 .\readTxtFile.py
-pear
-apple
-orange
-mandarin
-watermelon
-pomegranate
-pear
-apple
-orange
-mandarin
-watermelon
-pomegranate
-'''
