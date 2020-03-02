@@ -1390,3 +1390,27 @@ Output: Sim
 
 Here's a summary of function elements:
 * See summary_of_function_elements.jpg
+
+
+Section 11: File Processing
+
+71. Reading Text from a File:
+myfile = open("fruits.txt")
+print(myfile.read())
+
+''' Output:
+py -3 .\readTxtFile.py
+pear
+apple
+orange
+mandarin
+watermelon
+pomegranate
+'''
+
+Coding Excercise 44: Read Text from a File and Print (E)
+
+Answer:
+file = open("bear.txt")
+print(file.read())
+
