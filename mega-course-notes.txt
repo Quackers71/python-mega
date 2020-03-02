@@ -30,7 +30,7 @@ https://youtu.be/azcrPFhaY9k - How To Think Like A Programmer
 
 # Variables and Coding Excercise 1 & 2
 
-Coding Excercise 1. Your First Python Excercise (E)
+Coding Excercise 1: Your First Python Excercise (E)
 Assign a value to x in the first line, and print out the variable value in the second.
 
 1 x = 1
@@ -38,7 +38,7 @@ Assign a value to x in the first line, and print out the variable value in the s
 3 
 
 
-Coding Excercise 2. Assign Multiple Values and Print (E)
+Coding Excercise 2: Assign Multiple Values and Print (E)
 Assign some values to variables x, y, and z.  Then insert x, y, and z inside a print() function to print out
 the values of those variables.
 
@@ -48,7 +48,7 @@ the values of those variables.
 4 print(x, y, z)
 
 
-Coding Excercise 3. Create Integers, Strings, and Floats (E)
+Coding Excercise 3: Create Integers, Strings, and Floats (E)
 Create three variables mood, strength, and rank and assign a string to mood, a float to strength, and an integer
 to rank.  The values you assign can be anything as long as they are the correct type.
 
@@ -57,7 +57,7 @@ to rank.  The values you assign can be anything as long as they are the correct 
 3 rank = 100
 
 
-Coding Excercise 4. Sum Up Numbers (E)
+Coding Excercise 4: Sum Up Numbers (E)
 Assign numbers to x, y, and z.  Calculate the sum of x, y, and z in s.  Print out the value of s.
 
 1 x = 22
@@ -69,13 +69,13 @@ Assign numbers to x, y, and z.  Calculate the sum of x, y, and z in s.  Print ou
 13. Ranges
 See Ranges.py
 
-Coding Excercise 5. Create List (E)
+Coding Excercise 5: Create List (E)
 Assign a list to variable temperatures.  The list should contain a float, integer & a string
 
 temperatures = [13.34, 6, "Hello"]
 
 
-Coding Excercise 6. Create Complex List (E)
+Coding Excercise 6: Create Complex List (E)
 Assign a list to variable rainfall.  The list should contain a float, integer, a string & a list
 
 rainfall = [15.50, 60, "Yo Bitches!", ["Help", 14, 50, 1009.6]]
@@ -185,7 +185,7 @@ The mean of the student_grades :  8.466666666666667
    https://fiftyexamples.readthedocs.io/en/latest/algorithms.html
 
 
-Coding Excercise 7. Calculate Maximum (E)
+Coding Excercise 7: Calculate Maximum (E)
 
 Complete the script so that it prints out the maximum value of student_grades. 
 Find the appropiate function or method.
@@ -195,7 +195,7 @@ max_value = max(student_grades)
 print(max_value)
 
 
-Coding Excercise 8. Count Values (E)
+Coding Excercise 8: Count Values (E)
 
 Find the proper function or method that counts how many 10.0 items there are in the student_grades and 
 print out the output using a print() function.
@@ -204,7 +204,7 @@ student_grades = [9.1, 8.8, 10.0, 7.7, 6.8, 8.0, 10.0, 8.1, 10.0, 9.9]
 print(student_grades.count(10.0))
 
 
-Coding Excercise 9. Modify String (E)
+Coding Excercise 9: Modify String (E)
 
 Find the proper function or method that converts the string in username into lowercase letters and 
 prints out the output.
@@ -218,7 +218,7 @@ Python 2 was released in 2000, and Python 3 (the current
 version) in 2008.
 
 
-Coding Excercise 10. Create Dictionary (E)
+Coding Excercise 10: Create Dictionary (E)
 Assign dict to variable day_temperatures. The dict should contain three keys, each key should
 have a float as the value
 
@@ -261,13 +261,13 @@ output of the dict.values in a for loop
 5
 
 
-Coding Excercise 11. Create Tuple (E)
+Coding Excercise 11: Create Tuple (E)
 Create a color_codes variable and assign a tuple to it.  The Tuple should contain three tuples as items.
 
 color_codes =  ((2,20, 200), (6, 60, 600), (9, 90, 900))
 
 
-Coding Excercise 12. Create Complex Dictionary (E)
+Coding Excercise 12: Create Complex Dictionary (E)
 Assign a dictionary to variable day_temperatures.  The dictionary should contatin three keys: 'morning', 
 'noon', and 'evening' and each key should contain a tuple as value.  Each tuple should contain three floats.
 
@@ -357,7 +357,7 @@ ValueError: 8.8 is not in list
 >>>
 
 
-Coding Excercise 13. Append Item to List (E)
+Coding Excercise 13: Append Item to List (E)
 Append the value if current to the end of the list seconds. Please use the list.append() method to do that.
 
 seconds = [1.2323442655, 1.4534345567, 1.023458894]
@@ -365,14 +365,14 @@ current = 1.10001399445
 seconds.append(current)
 
 
-Coding Excercise 14. Remove Item from List (E)
+Coding Excercise 14: Remove Item from List (E)
 Remove item 1.4534345567 from seconds
 
 seconds = [1.2323442655, 1.4534345567, 1.023458894, 1.10001399445]
 seconds.remove(1.4534345567)
 
 
-Coding Excercise 15. Remove Three Items from List (E)
+Coding Excercise 15: Remove Three Items from List (E)
 Remove Items 1.4534345567, 1.023458894 ,and 1.10001399445 from seconds
 
 seconds = [1.2323442655, 1.4534345567, 1.023458894, 1.10001399445]
@@ -389,19 +389,19 @@ seconds.remove(1.10001399445)
 8.8
 >>>
 
-Coding Excercise 16. Access Item (E)
+Coding Excercise 16: Access Item (E)
 Complete the script so that it prints out the 3rd item of list serials
 
 serials = ["RH80810A", "AA899819A", "XYSA9099400", "OOP8988459", "EEO8904882", "KOC9889482"]
 print(serials[2])
 
-Coding Excercise 17. Access Items (E)
+Coding Excercise 17: Access Items (E)
 Complete the script so that it prints out the 1st, the 3rd, and the 6th items of list serials
 
 serials = ["RH80810A", "AA899819A", "XYSA9099400", "OOP8988459", "EEO8904882", "KOC9889482"]
 print(serials[0], serials[2], serials[5])
 
-Coding Excercise 18. Access and Append (E)
+Coding Excercise 18: Access and Append (E)
 Append the first item of weekend to workdays.
 
 workdays = ["Mon", "Tue", "Wed", "Thu", "Fri"]
@@ -473,21 +473,21 @@ Great job! You are ready to move on to the next lecture.
 You got 4 out of 4 correct on the first attempt.
 
 
-Coding Excercise 19. Slicing a List, 2nd to 4th (E)
+Coding Excercise 19: Slicing a List, 2nd to 4th (E)
 Print out the slice ['b', 'c', 'd'] of the letters list
 
 letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
 print(letters[1:4])
 
 
-Coding Excercise 20. Slicing a List, First Three (E)
+Coding Excercise 20: Slicing a List, First Three (E)
 Print out the slice ['a', 'b', 'c'] of the letters list
 
 letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
 print(letters[:3])
 
 
-Coding Excercise 21. Slicing a List, Last Three (E)
+Coding Excercise 21: Slicing a List, Last Three (E)
 Print out the slice ['e', 'f', 'g'] of the letters list
 
 letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
@@ -550,7 +550,7 @@ Output: '+423998200919'
 # Section 5: The Basics: Functions and Conditionals
 
 
-Coding Excercise 22. Lengther (E)
+Coding Excercise 22: Lengther (E)
 Complete the lengther function definition so that is returns the number of items for every input 1st.
 Note. You don't have to call the function unless you are explicitly required to do so.  Definin the 
 function is enough.  However, if you like to call your function under your function definition, that's
@@ -560,7 +560,7 @@ def lengther(lst):
     return len(lst)
 
 
-Coding Excercise 23. Square Area (E)
+Coding Excercise 23: Square Area (E)
 Define a function that calculates the area of a sqaure.
 For example, if I was to call your function with foo(7) the output would be 49.  If I called it with 
 foo(3) it would return 9, and so on.
@@ -576,7 +576,7 @@ def foo(a):
     return a * a
 
 
-Coding Excercise 24. Volume Converter (E)
+Coding Excercise 24: Volume Converter (E)
 Define a function that converts fluid ounces to mililitres knowing that 1 fluid ounce is equal to 29.57353 
 mililitres.  For example, I was to call your function with foo(1) I would get an output of 29.57353.  If I
 called it with foo(5) I would get 147.86765, and so on.
@@ -706,7 +706,7 @@ type(3) == int : True
 isinstance(3, int) : True
 
 
-Coding Excercise 25. Password Controller (E)
+Coding Excercise 25: Password Controller (E)
 Define a function that:
 (1) takes a string as a parameter
 (2) returns False if the string contains less than 8 characters
@@ -715,7 +715,7 @@ If I called your function with foo(mypass) it would return.  If I called it foo(
 it would return True, and so on.
 
 
-Coding Excercise 26. Warm or Cold (E)
+Coding Excercise 26: Warm or Cold (E)
 Define a function that:
 (1) takes a temperature as a parameter
 (2) returns Warm if the temperature is greater than 7
@@ -724,7 +724,7 @@ If I called your function with foo(10) it would return Warm.  If I called it foo
 it would return Cold in both cases, and so on.
 
 
-Coding Excercise 27. Hot, Warm, Cold (E)
+Coding Excercise 27: Hot, Warm, Cold (E)
 Define a function that:
 (1) takes a temperature as a parameter
 (2) returns Hot if the temperature is greater than 25
@@ -803,7 +803,7 @@ Enter a temperature :7.2
 Warm
 
 
-Coding Excercise 28. String Formatting (E)
+Coding Excercise 28: String Formatting (E)
 
 Implement a function that gets a person's name as a parameter and greets the person with Hi Person. For example, 
 if I called your function with foo("Smithy") the function should return Hi Smithy.
@@ -821,7 +821,7 @@ def foo(name):
 foo("Smithy")
 
 
-Coding Excercise 29. String Formatting and Uppercase (E)
+Coding Excercise 29: String Formatting and Uppercase (E)
 
 Implement a function that gets a person's name as a parameter and greets the person with Hi Person. The first 
 letter should always be uppercase.  For example, if I called your function with foo("Smithy") or foo("smithy")
@@ -1300,4 +1300,18 @@ def foo(a, b):
     return a + b
     
 print(foo("Hello ", "World!"))
+
+Coding Excercise 41: Average Function (E)
+
+Define a function that takes an indefinite number of numbers as arguments and 
+returns their average.  If I called your function with foo(10, 20, 30, 40) it 
+should return the 25, the average of those numbers.
+
+def foo(*args):
+    return sum(args) / len(args)
+
+print(int(foo(10, 20, 30, 40)))
+
+PS C:\Users\Rob\Desktop\AWS EC2\python-mega\Section10> py -3 .\averageFunctionEx41.py
+25
 
