@@ -1414,3 +1414,30 @@ Answer:
 file = open("bear.txt")
 print(file.read())
 
+
+Coding Exercise 45: Reading and Processing Text (E)
+
+Answer:
+myfile = open("bear.txt")
+content = myfile.read()
+
+myfile.close()
+
+print(content[:90])
+
+
+Coding Exercise 46: File Processing inside a Function (E)
+
+Answer: 
+def foo(character, filepath="bear.txt"):
+    myfile = open(filepath)
+    content = myfile.read()
+    return content.count(character)
+
+print(foo("e"))
+
+''' Output
+py -3 .\fileProcessingInFunc.py
+56
+'''
+
