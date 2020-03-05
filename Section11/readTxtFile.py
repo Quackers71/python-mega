@@ -1,6 +1,9 @@
-myfile = open("fruits.txt")
+""" myfile = open("fruits.txt")
 content = myfile.read()
-myfile.close()
+myfile.close() """
+
+with open("fruits.txt") as myfile:
+    content = myfile.read()
 
 print(content)
 
