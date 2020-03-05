@@ -1441,3 +1441,11 @@ py -3 .\fileProcessingInFunc.py
 56
 '''
 
+76. Writing Text to a File
+
+>>> help(open)
+Help on built-in function open in module io:
+
+open(file, mode='r', buffering=-1, encoding=None, errors=None, newline=None, closefd=True, opener=None)
+    Open file and return a stream.  Raise OSError upon failure.
+

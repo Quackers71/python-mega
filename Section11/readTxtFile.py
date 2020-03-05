@@ -1,4 +1,4 @@
-with open("files/fruits.txt") as myfile:
+with open("files/fruits.txt", "r") as myfile:
     content = myfile.read()
 
 print(content)
