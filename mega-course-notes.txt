@@ -1456,3 +1456,11 @@ Answer:
 with open("file.txt", "w") as myfile:
     myfile.write("snail")
 
+Coding Exercise 48: Write First 90 (E)
+
+Answer:
+with open("bear.txt", "r") as file:
+    content = file.read()
+
+with open("first.txt", "w") as file:
+    file.write(content[:90])
