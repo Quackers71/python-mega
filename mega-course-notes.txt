@@ -30,14 +30,15 @@ https://youtu.be/azcrPFhaY9k - How To Think Like A Programmer
 
 # Variables and Coding Excercise 1 & 2
 
-Coding Excercise 1. Your First Python Excercise (E)
+Coding Excercise 1: Your First Python Excercise (E)
 Assign a value to x in the first line, and print out the variable value in the second.
 
 1 x = 1
 2 print(x)
 3 
 
-Coding Excercise 2. Assign Multiple Values and Print (E)
+
+Coding Excercise 2: Assign Multiple Values and Print (E)
 Assign some values to variables x, y, and z.  Then insert x, y, and z inside a print() function to print out
 the values of those variables.
 
@@ -46,7 +47,8 @@ the values of those variables.
 3 z = 3
 4 print(x, y, z)
 
-Coding Excercise 3. Create Integers, Strings, and Floats (E)
+
+Coding Excercise 3: Create Integers, Strings, and Floats (E)
 Create three variables mood, strength, and rank and assign a string to mood, a float to strength, and an integer
 to rank.  The values you assign can be anything as long as they are the correct type.
 
@@ -54,7 +56,8 @@ to rank.  The values you assign can be anything as long as they are the correct 
 2 strength = 52.4
 3 rank = 100
 
-Coding Excercise 4. Sum Up Numbers (E)
+
+Coding Excercise 4: Sum Up Numbers (E)
 Assign numbers to x, y, and z.  Calculate the sum of x, y, and z in s.  Print out the value of s.
 
 1 x = 22
@@ -66,12 +69,13 @@ Assign numbers to x, y, and z.  Calculate the sum of x, y, and z in s.  Print ou
 13. Ranges
 See Ranges.py
 
-Coding Excercise 5. Create List (E)
+Coding Excercise 5: Create List (E)
 Assign a list to variable temperatures.  The list should contain a float, integer & a string
 
 temperatures = [13.34, 6, "Hello"]
 
-Coding Excercise 6. Create Complex List (E)
+
+Coding Excercise 6: Create Complex List (E)
 Assign a list to variable rainfall.  The list should contain a float, integer, a string & a list
 
 rainfall = [15.50, 60, "Yo Bitches!", ["Help", 14, 50, 1009.6]]
@@ -180,7 +184,8 @@ The mean of the student_grades :  8.466666666666667
 3. algorithms i.e. using functions and calculations
    https://fiftyexamples.readthedocs.io/en/latest/algorithms.html
 
-Coding Excercise 7. Calculate Maximum (E)
+
+Coding Excercise 7: Calculate Maximum (E)
 
 Complete the script so that it prints out the maximum value of student_grades. 
 Find the appropiate function or method.
@@ -189,7 +194,8 @@ student_grades = [9.1, 8.8, 7.5]
 max_value = max(student_grades)
 print(max_value)
 
-Coding Excercise 8. Count Values (E)
+
+Coding Excercise 8: Count Values (E)
 
 Find the proper function or method that counts how many 10.0 items there are in the student_grades and 
 print out the output using a print() function.
@@ -197,7 +203,8 @@ print out the output using a print() function.
 student_grades = [9.1, 8.8, 10.0, 7.7, 6.8, 8.0, 10.0, 8.1, 10.0, 9.9]
 print(student_grades.count(10.0))
 
-Coding Excercise 9. Modify String (E)
+
+Coding Excercise 9: Modify String (E)
 
 Find the proper function or method that converts the string in username into lowercase letters and 
 prints out the output.
@@ -210,7 +217,8 @@ Did you know that Python was first released in  1991?
 Python 2 was released in 2000, and Python 3 (the current 
 version) in 2008.
 
-Coding Excercise 10. Create Dictionary (E)
+
+Coding Excercise 10: Create Dictionary (E)
 Assign dict to variable day_temperatures. The dict should contain three keys, each key should
 have a float as the value
 
@@ -252,12 +260,14 @@ output of the dict.values in a for loop
 4
 5
 
-Coding Excercise 11. Create Tuple (E)
+
+Coding Excercise 11: Create Tuple (E)
 Create a color_codes variable and assign a tuple to it.  The Tuple should contain three tuples as items.
 
 color_codes =  ((2,20, 200), (6, 60, 600), (9, 90, 900))
 
-Coding Excercise 12. Create Complex Dictionary (E)
+
+Coding Excercise 12: Create Complex Dictionary (E)
 Assign a dictionary to variable day_temperatures.  The dictionary should contatin three keys: 'morning', 
 'noon', and 'evening' and each key should contain a tuple as value.  Each tuple should contain three floats.
 
@@ -267,6 +277,7 @@ day_temperatures = {'morning': (1.2, 1.3, 1.4), 'noon': (2.2, 2.3, 2.4) , 'eveni
 Python is mainly used for automation purposes, web apps, and data science.
 Many big companies like Instagram, Facebook, and Amazon use Python in different 
 parts of their products. For example, Facebook uses Python to process images.
+
 
 23. Summary: Integers, Floats, Lists, Dictionaries, Tuples, dir, help
 In this section you learned that:
@@ -345,20 +356,23 @@ Traceback (most recent call last):
 ValueError: 8.8 is not in list
 >>>
 
-Coding Excercise 13. Append Item to List (E)
+
+Coding Excercise 13: Append Item to List (E)
 Append the value if current to the end of the list seconds. Please use the list.append() method to do that.
 
 seconds = [1.2323442655, 1.4534345567, 1.023458894]
 current = 1.10001399445
 seconds.append(current)
 
-Coding Excercise 14. Remove Item from List (E)
+
+Coding Excercise 14: Remove Item from List (E)
 Remove item 1.4534345567 from seconds
 
 seconds = [1.2323442655, 1.4534345567, 1.023458894, 1.10001399445]
 seconds.remove(1.4534345567)
 
-Coding Excercise 15. Remove Three Items from List (E)
+
+Coding Excercise 15: Remove Three Items from List (E)
 Remove Items 1.4534345567, 1.023458894 ,and 1.10001399445 from seconds
 
 seconds = [1.2323442655, 1.4534345567, 1.023458894, 1.10001399445]
@@ -375,19 +389,19 @@ seconds.remove(1.10001399445)
 8.8
 >>>
 
-Coding Excercise 16. Access Item (E)
+Coding Excercise 16: Access Item (E)
 Complete the script so that it prints out the 3rd item of list serials
 
 serials = ["RH80810A", "AA899819A", "XYSA9099400", "OOP8988459", "EEO8904882", "KOC9889482"]
 print(serials[2])
 
-Coding Excercise 17. Access Items (E)
+Coding Excercise 17: Access Items (E)
 Complete the script so that it prints out the 1st, the 3rd, and the 6th items of list serials
 
 serials = ["RH80810A", "AA899819A", "XYSA9099400", "OOP8988459", "EEO8904882", "KOC9889482"]
 print(serials[0], serials[2], serials[5])
 
-Coding Excercise 18. Access and Append (E)
+Coding Excercise 18: Access and Append (E)
 Append the first item of weekend to workdays.
 
 workdays = ["Mon", "Tue", "Wed", "Thu", "Fri"]
@@ -441,36 +455,39 @@ Quiz 1: Accessing and Slicing Listrs and Strings
 Question 1:
 What would the following code return?
 'abcdef'[:3]
-Answer : 'abc'
+Answer: 'abc'
 
 Question 2:
 Which of the following outputs 'cd'?
-Answer : 'abcdef'[2:4]
+Answer: 'abcdef'[2:4]
 
 Question 3:
 Select the correct output for 'abcdef'[-2:]
-Answer : 'ef'
+Answer: 'ef'
 
 Question 4:
 What does the code ['abc' , 'def', 'ghi', 'jkl', 'mno'][-2][-2] output?
-Answer : 'k'
+Answer: 'k'
 
 Great job! You are ready to move on to the next lecture.
 You got 4 out of 4 correct on the first attempt.
 
-Coding Excercise 19. Slicing a List, 2nd to 4th (E)
+
+Coding Excercise 19: Slicing a List, 2nd to 4th (E)
 Print out the slice ['b', 'c', 'd'] of the letters list
 
 letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
 print(letters[1:4])
 
-Coding Excercise 20. Slicing a List, First Three (E)
+
+Coding Excercise 20: Slicing a List, First Three (E)
 Print out the slice ['a', 'b', 'c'] of the letters list
 
 letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
 print(letters[:3])
 
-Coding Excercise 21. Slicing a List, Last Three (E)
+
+Coding Excercise 21: Slicing a List, Last Three (E)
 Print out the slice ['e', 'f', 'g'] of the letters list
 
 letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
@@ -486,6 +503,7 @@ dict_values([9.1, 7.5, 8.8])
 >>> eng_port = {"rain": "chuva", "sun": "sol"}
 >>> eng_port["sun"]
 'sol'
+
 
 31. Summary: Positive/Negative Indexes, Slicing
 In this section you learned that:
@@ -531,7 +549,8 @@ Output: '+423998200919'
 
 # Section 5: The Basics: Functions and Conditionals
 
-Coding Excercise 22. Lengther (E)
+
+Coding Excercise 22: Lengther (E)
 Complete the lengther function definition so that is returns the number of items for every input 1st.
 Note. You don't have to call the function unless you are explicitly required to do so.  Definin the 
 function is enough.  However, if you like to call your function under your function definition, that's
@@ -540,7 +559,8 @@ fine too.
 def lengther(lst):
     return len(lst)
 
-Coding Excercise 23. Square Area (E)
+
+Coding Excercise 23: Square Area (E)
 Define a function that calculates the area of a sqaure.
 For example, if I was to call your function with foo(7) the output would be 49.  If I called it with 
 foo(3) it would return 9, and so on.
@@ -555,7 +575,8 @@ Solution.py was
 def foo(a):
     return a * a
 
-Coding Excercise 24. Volume Converter (E)
+
+Coding Excercise 24: Volume Converter (E)
 Define a function that converts fluid ounces to mililitres knowing that 1 fluid ounce is equal to 29.57353 
 mililitres.  For example, I was to call your function with foo(1) I would get an output of 29.57353.  If I
 called it with foo(5) I would get 147.86765, and so on.
@@ -627,7 +648,7 @@ if x * 2 > x:
 else:
     print("Less or Equal")
 
-Answer : Less or Equal
+Answer: Less or Equal
 x is -10 and x * 2 would be -20 and -20 is not greater than -10.
 
 Question 2:
@@ -643,7 +664,7 @@ print(foo(1, [1, 2, 3]))
 print(foo(1, [2, 3]))
 print(foo(1, ['1', 2, 3]))
 
-Answer :
+Answer:
 True
 False
 False
@@ -654,7 +675,7 @@ Note the third list has '1', but not 1. 1 is not the same as '1'. They are of di
 Question 3:
 Check the code that has a correct syntax.
 
-Answer : #4 
+Answer: #4 
 def check_username(username):
     if len(username) > 4:
         return "Successfull!"
@@ -669,7 +690,7 @@ if isinstance(x, int) or isinstance(x, float) or x=='1':
 else:
     print("Not valid!")
 
-Answer : The code prints out Valid type! if x has a value of '1'.
+Answer: The code prints out Valid type! if x has a value of '1'.
 Correct! If any of the conditions in line 1 is met, the code will execute line 2. In other words, 
 if x has a value of '1' that means one of the conditions in line 1 was met.
 
@@ -684,7 +705,8 @@ mean(student_grades) : 8.466666666666667
 type(3) == int : True
 isinstance(3, int) : True
 
-Coding Excercise 25. Password Controller (E)
+
+Coding Excercise 25: Password Controller (E)
 Define a function that:
 (1) takes a string as a parameter
 (2) returns False if the string contains less than 8 characters
@@ -692,7 +714,8 @@ Define a function that:
 If I called your function with foo(mypass) it would return.  If I called it foo("mylongpassword") 
 it would return True, and so on.
 
-Coding Excercise 26. Warm or Cold (E)
+
+Coding Excercise 26: Warm or Cold (E)
 Define a function that:
 (1) takes a temperature as a parameter
 (2) returns Warm if the temperature is greater than 7
@@ -700,7 +723,8 @@ Define a function that:
 If I called your function with foo(10) it would return Warm.  If I called it foo(7) or foo(5)
 it would return Cold in both cases, and so on.
 
-Coding Excercise 27. Hot, Warm, Cold (E)
+
+Coding Excercise 27: Hot, Warm, Cold (E)
 Define a function that:
 (1) takes a temperature as a parameter
 (2) returns Hot if the temperature is greater than 25
@@ -708,6 +732,7 @@ Define a function that:
 (4) returns Cold if the temperature is less than 15
 If I called your function with foo(10) it would return Cold.  
 foo(15) or foo(16) or foo(25) would all return Warm and foo(26) would return Hot.
+
 
 41. Summary of Section5: Functions and Conditionals
 In this section you learned to:
@@ -778,7 +803,7 @@ Enter a temperature :7.2
 Warm
 
 
-Coding Excercise 28. String Formatting (E)
+Coding Excercise 28: String Formatting (E)
 
 Implement a function that gets a person's name as a parameter and greets the person with Hi Person. For example, 
 if I called your function with foo("Smithy") the function should return Hi Smithy.
@@ -795,7 +820,8 @@ def foo(name):
 
 foo("Smithy")
 
-Coding Excercise 29. String Formatting and Uppercase (E)
+
+Coding Excercise 29: String Formatting and Uppercase (E)
 
 Implement a function that gets a person's name as a parameter and greets the person with Hi Person. The first 
 letter should always be uppercase.  For example, if I called your function with foo("Smithy") or foo("smithy")
@@ -812,6 +838,7 @@ def foo(name):
     return "Hi %s" % name.title()
 
 foo("smithy")
+
 
 45. Summary: Processing User Input
 In this section you learned that:
@@ -840,3 +867,643 @@ experience_years = 1.5
 print("Hi {}, you have {} years of experience".format(name, experience_years))
 
 Output: Hi Sim, you have 1.5 years of experience.
+
+
+Coding Excercise 30: Loop Over Colours (E)
+Loop over the colours items and print the item in every loop.  So, the expected
+output of your code would be:
+11
+34
+98
+43
+45
+54
+54
+
+colours = [11, 34, 98, 43, 45, 54, 54]
+
+for cl in colours:
+    print(cl)
+
+
+Coding Excercise 31: Loop Over Big Colours (E)
+Loop over the colours items and print the item in every loop only if the item is greater then 50.  
+So, the expected output of your code would be:
+98
+54
+54
+
+colours = [11, 34, 98, 43, 45, 54, 54]
+
+for cl in colours:
+    if cl > 50:
+        print(cl)
+
+
+Coding Excercise 32: Loop Over Integer Colours (E)
+Loop over the colours items and print the item in every loop only if the item is an integer.  
+So, the expected output of your code would be:
+11
+43
+54
+54
+
+colours = [11, 34.1, 98.2, 43, 45.1, 54, 54]
+
+for cl in colours:
+    if isinstance(cl, int):
+        print(cl)
+
+
+Coding Excercise 33: Loop Over Integer and BIg Colours (E)
+Loop over the colours items and print the item in every loop only if the item is an integer and 
+is greater than 50.  So, the expected output of your code would be:
+54
+54
+
+colours = [11, 34.1, 98.2, 43, 45.1, 54, 54]
+
+for cl in colours:
+    if isinstance(cl, int):
+        print(cl)
+
+47. For Loop Over a Function
+Note that using loops you can call any function multiple times, even your own functions. Let's suppose we defined this function:
+
+def celsius_to_kelvin(cels):
+    return cels + 273.15
+That is a function that gets a number as input, adds 273.15 to it and returns the result. A for loop allows us to execute that function over a list of numbers:
+
+monday_temperatures = [9.1, 8.8, -270.15]
+ 
+for temperature in monday_temperatures:
+    print(celsius_to_kelvin(temperature))
+The output of that would be:
+
+282.25
+281.95
+3.0
+
+So, in the first iteration celsius_to_kelvin(9.1) was executed, in the second celsius_to_kelvin(8.8) and in the third celsius_to_kelvin(-270.15).
+
+That's just something to keep in mind.
+
+48. Did You Know?
+Python comes pre-installed on Linux and Mac operating systems. In May 2019, Windows 10 also launched an update which also have Python pre-installed. 
+That is an added endorsement for Python.
+
+50. Bonus Code: Dictionary Loop and String Formatting
+You can combine a dictionary for loop with string formatting to create text containing information from the dictionary:
+
+phone_numbers = {"John Smith": "+37682929928", "Marry Simpons": "+423998200919"}
+ 
+for pair in phone_numbers.items():
+    print("{} has as phone number {}".format(pair[0], pair[1]))
+
+
+Another (better) way to do it::
+
+phone_numbers = {"John Smith": "+37682929928", "Marry Simpons": "+423998200919"}
+ 
+for key, value in phone_numbers.items():
+    print("{} has as phone number {}".format(key, value))
+In both cases the output is:
+
+Output:
+
+John Smith has as phone number +37682929928
+
+Marry Simpons has as phone number +423998200919
+
+
+Coding Excercise 34: Loop Over Dictionary and Format (E)
+
+Make the code print out the following output using a for loop:
+
+John Smith: +37682929928
+Marry Simpons: +423998200919
+
+So, the code should loop over the dictionary items and in each iteration should print 
+out the dictionary key, a colon, a space, and the corresponding value.
+
+Note: If you plan to use string formatting here, please be aware that Udemy uses Python 
+3.5 and the f"{}" syntax only works with Python 3.6+. Consider using the "%s" syntax instead.
+
+phone_numbers = {"John Smith": "+37682929928", "Marry Simpons": "+423998200919"}
+
+for details in phone_numbers.items():
+    print("%s: %s" % (details[0], details[1]))
+
+
+Coding Excercise 35: Loop Over Dictionary and Replace (E)
+
+Loop over the phone_numbers values and in each loop print out the phone number, but 
+with '00' instead of '+'.  In other words, your code should output:
+
+0037682929928
+00423998200919
+
+phone_numbers = {"John Smith": "+37682929928", "Marry Simpons": "+423998200919"}
+
+for details in phone_numbers.items():
+    print("%s" % (details[1]).replace('+', '00'))
+    #print("{}").format(details[1]).replace('+', '00')
+
+Quiz 3. While loops
+
+Question 1:
+What will the following code output?
+
+a = 10
+while a > 0:
+    x = a + 1
+    print(x)
+
+Answer: 
+11
+11
+11
+11
+11
+
+Good job!
+The while loop checks if a is greater than 0. That's always true since a is 10. 
+Then the loops performs x = 10 + 1 and then prints x which happens to be 11, always.
+
+Question 2:
+What does the following code output?
+
+a = 0
+while a < 5:
+    a = a + 1
+    print(a)
+
+Answer: 
+1
+2
+3
+4
+5
+
+Good job!
+At first a is 0. The loop checks if a is less than 5, which is true in the first iteration. 
+Then, a = a + 1 adds 1 to a, so now a is 1 and 1 is printed out. The next loop does a = 1 + 1 so a becomes 2. 
+The third loop does a = 2 + 1, so a becomes 3 and so the loop continues until a is not less than 5 anymore.
+
+Great job! You are ready to move on to the next lecture.
+You got 2 out of 2 correct on the first attempt.
+
+
+54. Summary: Loops
+In this section you learned that:
+
+For loops are useful for executing a command over a large number of items.
+
+You can create a for loop like so:
+
+for letter in 'abc':
+    print(letter.upper())
+Output:
+
+A
+B
+C
+
+The name after for (e.g. letter) is just a variable name
+
+
+
+You can loop over dictionary keys:
+
+phone_numbers = {"John Smith":"+37682929928","Marry Simpons":"+423998200919"}
+for value in phone_numbers.keys():
+    print(value)
+Output:
+
+John Smith
+Marry Simpsons
+
+You can loop over dictionary values:
+
+phone_numbers = {"John Smith":"+37682929928","Marry Simpons":"+423998200919"}
+for value in phone_numbers.values():
+    print(value)
+Output:
+
++37682929928
++423998200919
+
+You can loop over dictionary items:
+
+phone_numbers = {"John Smith":"+37682929928","Marry Simpons":"+423998200919"}
+for key, value in phone_numbers.items():
+    print(key, value)
+Output: 
+
+('John Smith', '+37682929928')
+
+('Marry Simpons', '+423998200919')
+
+
+
+While loops will run as long as a condition is true:
+
+while datetime.datetime.now() < datetime.datetime(2090, 8, 20, 19, 30, 20):
+    print("It's not yet 19:30:20 of 2090.8.20")
+The loop above will print out the string inside print() over and over again until the 20th of August, 2090.
+
+Tested the above using:
+
+import datetime
+
+while datetime.datetime.now() < datetime.datetime(2020, 2, 29, 9, 40, 00):
+    print("It's not yet 09:40:00 of 2020.2.29")
+
+Output:
+
+It's not yet 09:40:00 of 2020.2.29
+It's not yet 09:40:00 of 2020.2.29
+It's not yet 09:40:00 of 2020.2.29
+It's not yet 09:40:00 of 2020.2.29
+It's not yet 09:40:00 of 2020.2.29
+It's not yet 09:40:00 of 2020.2.29
+It's not yet 09:40:00 of 2020.2.29
+PS C:\Users\fcukq\Desktop\python-mega\Section7> date
+
+29 February 2020 09:40:02
+
+Section 8: Building a Program
+
+PS C:\Users\Rob\Desktop\AWS EC2\python-mega\Section8> py -3 .\textPro.py
+Say something: Hello
+Say something: how are you
+Say something: what day again
+Say something: why me
+Say something: bye
+Say something: \end
+Hello. How are you? What day again? Why me? Bye.
+
+Section 9: List Comprehensions
+
+60. Simple List Comprehension
+
+PS C:\Users\Rob\Desktop\AWS EC2\python-mega\Section9> py -3 .\preListComprehension.py 
+[22.1, 23.4, 34.0, 23.0]
+
+PS C:\Users\Rob\Desktop\AWS EC2\python-mega\Section9> py -3 .\listComprehension.py
+[22.1, 23.4, 34.0, 23.0]
+
+
+Coding Excercise 36: Only Numbers (E)
+
+Define a function that takes as a parameter list that contains both numbers and strings and 
+returns the list containing only the numbers.  For example, if I called your function with 
+foo([99, 'no data', 95, 94, 'no data']) it should return [99, 95, 94].
+
+def foo(lst):
+    return [i for i in lst if not isinstance(i, str)]
+    
+foo([99, 'no data', 95, 94, 'no data'])
+
+Ex 36. Alternative way to solve and output the values below:
+
+def foo(lst):
+    nums = []
+    for i in lst: 
+        if not isinstance(i, str):
+            nums.append(i)
+            print(i)
+    return nums
+
+foo([99, 'no data', 95, 94, 'no data'])
+
+""" For comparison, here is a different way to solve this quiz-challenge. 
+It uses both a for-loop and an if-test. The solution loops and appends 
+only the numeric values from lst to a 2nd list variable that I've named nums: """
+
+Output:
+PS C:\Users\Rob\Desktop\AWS EC2\python-mega\Section9> py -3 .\listCompTest.py       
+99
+95
+94
+
+
+Coding Excercise 37: Only Positive Numbers (E)
+
+Define a function that takes as a parameter list that containing only the numbers that are greater than 0.  
+For example, if I called your function with foo([-5, 3, -1, 101]) it should return [3, 101].
+
+def foo(lst):
+    return [i for i in lst if i > 0]
+
+foo([-5, 3, -1, 101])
+
+Ex 37. Again an alternative way to solve and output the values below:
+
+def foo(lst):
+    nums = []
+    for i in lst: 
+        if i > 0:
+            nums.append(i)
+            print(i)
+
+foo([-5, 3, -1, 101])
+
+Output:
+
+PS C:\Users\Rob\Desktop\AWS EC2\python-mega\Section9> py -3 .\listCompTest2.py
+3
+101
+
+62. List Comprehension with If-Else Conditional - Output
+PS C:\Users\Rob\Desktop\AWS EC2\python-mega\Section9> py -3 .\listComprehWithIfElse.py
+[22.1, 23.4, 34.0, 0, 23.0]
+
+Coding Excercise 38: Zero Instead (E)
+
+Define a functions that takes as parameter a list that contains both numbers and strings and 
+returns the same list but with zeros instead of strings.  For example, I called your function 
+with foo([99, 'no data', 95, 94, 'no data']) it should return [99, 0, 95, 94, 0]
+
+def foo(lst):
+    return [i if not isinstance(i, str) else 0 for i in lst]
+
+foo([99, 'no data', 95, 94, 'no data'])
+
+
+Coding Excercise 39: Convert and Sum Up (E)
+
+Define a functions that takes as parameter a list that contains decimal numbers as strings and 
+returns the sum of those numbers.  For example, I called your function with foo(['1.2, '2.6', '3.3']) 
+it should return 7.1.  Note that the floats of the input list are string datatypes.
+
+def foo(lst):
+    return sum([float(i) for i in lst])
+
+foo(['1.2', '2.6', '3.3'])
+
+and then sort working with output:
+
+def foo(lst):
+    nums = []
+    for i in lst:     
+        print(sum(float(i) for i in lst))
+        print(type(i))
+      
+    return nums
+
+foo(['1.2', '2.6', '3.3'])
+
+PS C:\Users\Rob\Desktop\AWS EC2\python-mega\Section9> py -3 .\listCompTest3.py
+7.1
+<class 'str'>
+7.1
+<class 'str'>
+7.1
+<class 'str'>
+
+
+63. Summary: List Comprehensions
+In this section you learned that:
+
+A list comprehension is an expression that creates a list by iterating over another container.
+
+A basic list comprehension:
+
+[i*2 for i in [1, 5, 10]]
+Output: [2, 10, 20]
+
+List comprehension with if condition:
+
+[i*2 for i in [1, -2, 10] if i>0]
+Output: [2, 20]
+
+List comprehension with an if and else condition:
+
+[i*2 if i>0 else 0 for i in [1, -2, 10]]
+Output: [2, 0, 20]
+
+
+Section 10: More on Functions
+
+Did You Know?
+Python was the sixth most popular programming language in 2010 on 
+StackOverflow (left image). It continually went up in the ranks to 
+being the most popular among all in 2018 (right image).
+
+
+Coding Excercise 40: Function with Multiple Parameters (E)
+
+Implement a function that takes two strings as parameters, concatenates 
+them, and returns the results.
+
+def foo(a, b):
+    return a + b
+    
+print(foo("Hello ", "World!"))
+
+
+Coding Excercise 41: Average Function (E)
+
+Define a function that takes an indefinite number of numbers as arguments and 
+returns their average.  If I called your function with foo(10, 20, 30, 40) it 
+should return the 25, the average of those numbers.
+
+def foo(*args):
+    return sum(args) / len(args)
+
+print(int(foo(10, 20, 30, 40)))
+
+PS C:\Users\Rob\Desktop\AWS EC2\python-mega\Section10> py -3 .\averageFunctionEx41.py
+25
+
+Coding Excercise 42: Indefinite Number of Strings Processed (E)
+
+Define a function that takes an indefinite number of strings as parameters and 
+returns a list containing all the strings in UPPERCASE and sorted alphabetically.
+For example, if I called your function with foo("snow", "glacier", "iceberg") it 
+should return ['GLACIER', 'ICEBERG', 'SNOW'].
+
+def foo(*args):
+    args = [i.upper() for i in args]
+    return  sorted(args)
+
+print(foo("snow", "glacier", "iceberg"))
+
+PS C:\Users\Rob\Desktop\AWS EC2\python-mega\Section10> py -3 .\funcStringsArgs.py
+['GLACIER', 'ICEBERG', 'SNOW']
+
+
+Coding Excercise 43: Indefinite Number of Keyword Arguments (E)
+
+Enter the correct parameters inside find_sum() so that the output of the code is 9.
+
+def find_sum(**kwargs):
+    return sum(kwargs.values())
+    
+print(find_sum())
+
+Answer:
+
+def find_sum(**kwargs):
+    return sum(kwargs.values())
+    
+print(find_sum(a=4, b=5))
+
+
+69. Summary: More on Functions
+In this section you learned that:
+
+Functions can have more than one parameter:
+
+def volume(a, b, c):
+    return a * b * c
+Functions can have default parameters (e.g. coefficient):
+
+def converter(feet, coefficient = 3.2808):
+    meters = feet / coefficient
+    return meters
+ 
+print(converter(10))
+Output: 3.0480370641306997
+
+Arguments can be passed as non-keyword (positional) arguments (e.g. a) or keyword arguments (e.g. b=2 and c=10):
+
+def volume(a, b, c):
+    return a * b * c
+ 
+print(volume(1, b=2, c=10))
+An *args parameter allows the  function to be called with an arbitrary number of non-keyword arguments:
+
+def find_max(*args):
+    return max(args)
+print(find_max(3, 99, 1001, 2, 8))
+Output: 1001
+
+An **kwargs parameter allows the function to be called with an arbitrary number of keyword arguments:
+
+def find_winner(**kwargs):
+    return max(kwargs, key = kwargs.get)
+ 
+print(find_winner(Andy = 17, Marry = 19, Sim = 45, Kae = 34))
+Output: Sim
+
+Here's a summary of function elements:
+* See summary_of_function_elements.jpg
+
+
+Section 11: File Processing
+
+71. Reading Text from a File:
+myfile = open("fruits.txt")
+print(myfile.read())
+
+''' Output:
+py -3 .\readTxtFile.py
+pear
+apple
+orange
+mandarin
+watermelon
+pomegranate
+'''
+
+Coding Excercise 44: Read Text from a File and Print (E)
+
+Answer:
+file = open("bear.txt")
+print(file.read())
+
+
+Coding Exercise 45: Reading and Processing Text (E)
+
+Answer:
+myfile = open("bear.txt")
+content = myfile.read()
+
+myfile.close()
+
+print(content[:90])
+
+
+Coding Exercise 46: File Processing inside a Function (E)
+
+Answer: 
+def foo(character, filepath="bear.txt"):
+    myfile = open(filepath)
+    content = myfile.read()
+    return content.count(character)
+
+print(foo("e"))
+
+''' Output
+py -3 .\fileProcessingInFunc.py
+56
+'''
+
+76. Writing Text to a File
+
+>>> help(open)
+Help on built-in function open in module io:
+
+open(file, mode='r', buffering=-1, encoding=None, errors=None, newline=None, closefd=True, opener=None)
+    Open file and return a stream.  Raise OSError upon failure.
+
+
+Coding Exercise 47: Write Snail (E)
+
+Answer:
+with open("file.txt", "w") as myfile:
+    myfile.write("snail")
+
+Coding Exercise 48: Write First 90 (E)
+
+Answer:
+with open("bear.txt", "r") as file:
+    content = file.read()
+
+with open("first.txt", "w") as file:
+    file.write(content[:90])
+
+
+Coding Exercise 49: Read and Append (E)
+
+Answer:
+with open("bear1.txt", "r") as file:
+    content = file.read()
+    
+with open("bear2.txt", "a+") as file:
+    file.write(content)
+
+Coding Exercise 50: Copy n-times (E)
+
+Answer:
+with open("data.txt", "a+") as file:
+    file.seek(0)
+    content = file.read()
+    file.seek(0)
+    file.write("\n"+content)
+    file.write("\n"+content)
+
+
+78. Summary: File Processing
+In this section you learned that:
+
+You can read an existing file with Python:
+
+with open("file.txt") as file:
+    content = file.read()
+You can create a new file with Python and write some text on it:
+
+with open("file.txt", "w") as file:
+    content = file.write("Sample text")
+You can append text to an existing file without overwriting it:
+
+with open("file.txt", "a") as file:
+    content = file.write("More sample text")
+You can both append and read a file with:
+
+with open("file.txt", "a+") as file:
+    content = file.write("Even more sample text")
+    file.seek(0)
+    content = file.read()
