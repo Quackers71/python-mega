@@ -1678,3 +1678,45 @@ FYI
 >>> import sys
 >>> sys.prefix
 'C:\\Users\\Rob\\AppData\\Local\\Programs\\Python\\Python38'
+
+
+Section 13: Application 1: Build an Interactive English Dictionary
+
+>>> import json
+>>> help(json.load)
+Help on function load in module json:
+
+load(fp, *, cls=None, object_hook=None, parse_float=None, parse_int=None, 
+parse_constant=None, object_pairs_hook=None, **kw)
+    Deserialize ``fp`` (a ``.read()``-supporting file-like object containing
+    a JSON document) to a Python object.
+
+    ``object_hook`` is an optional function that will be called with the
+    result of any object literal decode (a ``dict``). The return value of
+    ``object_hook`` will be used instead of the ``dict``. This feature
+    can be used to implement custom decoders (e.g. JSON-RPC class hinting).
+
+    ``object_pairs_hook`` is an optional function that will be called with the
+    result of any object literal decoded with an ordered list of pairs.  The
+    return value of ``object_pairs_hook`` will be used instead of the ``dict``.
+    This feature can be used to implement custom decoders.  If ``object_hook``
+    is also defined, the ``object_pairs_hook`` takes priority.
+
+    To use a custom ``JSONDecoder`` subclass, specify it with the ``cls``
+    kwarg; otherwise ``JSONDecoder`` is used.
+
+>>> import json
+>>> d = open("data.json")
+>>> data = json.load(d)
+>>> print(type(data))
+<class 'dict'>
+>>> print(data)
+ doing something for customers, but that do not produce goods.'], 'test': 
+ ['To carry out an examination on (a substance, material, or system) by applying 
+ some chemical or physical procedure designed to indicate tTraceback 
+ (most recent call last):
+  File "<stdin>", line 1, in <module>
+KeyboardInterrupt etc, etc, etc...
+>>> data["rain"]
+['Precipitation in the form of liquid water drops with diameters greater than 0.5 millimetres.', 
+'To fall from the clouds in drops of water.']
