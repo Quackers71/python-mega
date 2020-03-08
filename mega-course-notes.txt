@@ -1629,6 +1629,8 @@ d-----       08/03/2020     20:23                __pycache__
 -a----       08/03/2020     20:22            568 _version.py
 -a----       08/03/2020     20:22          10644 __init__.py
 
+cd 'C:\Users\Rob\Desktop\AWS EC2\python-mega\'
+
 PS C:\Users\Rob\Desktop\AWS EC2\python-mega\Section12> py -3 .\third-PartyModules.py
 20.55
 20.55
