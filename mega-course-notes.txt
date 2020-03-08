@@ -1577,3 +1577,102 @@ PS C:\Users\Rob\Desktop\AWS EC2\python-mega\Section12> start C:\\Users\\Rob\\App
 'supports_effective_ids', 'supports_fd', 'supports_follow_symlinks', 'symlink', 'sys', 'system', 
 'terminal_size', 'times', 'times_result', 'truncate', 'umask', 'uname_result', 'unlink', 'urandom', 'utime', 
 'waitpid', 'walk', 'write']
+
+81. Third-Party Modules
+
+PS C:\Users\Rob\AppData\Local\Programs\Python\Python38\Scripts> .\pip3.8.exe install pandas       
+Collecting pandas
+  Downloading https://files.pythonhosted.org/packages/68/db/4a6f569775c1dd762d3cbb0505ba0cd93a96db5f34e9fc761ff2a76daefa/pandas-1.0.1-cp38-cp38-win_amd64.whl (9.2MB)
+     |████████████████████████████████| 9.2MB 1.6MB/s 
+Collecting python-dateutil>=2.6.1 (from pandas)
+  Downloading https://files.pythonhosted.org/packages/d4/70/d60450c3dd48ef87586924207ae8907090de0b306af2bce5d134d78615cb/python_dateutil-2.8.1-py2.py3-none-any.whl (227kB)
+     |████████████████████████████████| 235kB 1.1MB/s 
+Collecting numpy>=1.13.3 (from pandas)
+  Downloading https://files.pythonhosted.org/packages/95/47/ea0ae5a778aae07ede486f3dc7cd4b788dc53e11b01a17251b020f76a01d/numpy-1.18.1-cp38-cp38-win_amd64.whl (12.8MB)
+     |████████████████████████████████| 12.8MB 1.3MB/s 
+Collecting pytz>=2017.2 (from pandas)
+  Downloading https://files.pythonhosted.org/packages/e7/f9/f0b53f88060247251bf481fa6ea62cd0d25bf1b11a87888e53ce5b7c8ad2/pytz-2019.3-py2.py3-none-any.whl (509kB)
+     |████████████████████████████████| 512kB 1.6MB/s 
+Collecting six>=1.5 (from python-dateutil>=2.6.1->pandas)
+  Downloading https://files.pythonhosted.org/packages/65/eb/1f97cb97bfc2390a276969c6fae16075da282f5058082d4cb10c6c5c1dba/six-1.14.0-py2.py3-none-any.whl
+Installing collected packages: six, python-dateutil, numpy, pytz, pandas
+  WARNING: The script f2py.exe is installed in 'c:\users\rob\appdata\local\programs\python\python38\Scripts' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+Successfully installed numpy-1.18.1 pandas-1.0.1 python-dateutil-2.8.1 pytz-2019.3 six-1.14.0     
+WARNING: You are using pip version 19.2.3, however version 20.0.2 is available.
+You should consider upgrading via the 'python -m pip install --upgrade pip' command.
+PS C:\Users\Rob\AppData\Local\Programs\Python\Python38\Scripts> ls C:\Users\Rob\AppData\Local\Programs\Python\Python38\Lib\site-packages\pandas
+
+
+    Directory: C:\Users\Rob\AppData\Local\Programs\Python\Python38\Lib\site-packages\pandas       
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----       08/03/2020     20:23                api
+d-----       08/03/2020     20:23                arrays
+d-----       08/03/2020     20:23                compat
+d-----       08/03/2020     20:23                core
+d-----       08/03/2020     20:23                errors
+d-----       08/03/2020     20:23                io
+d-----       08/03/2020     20:23                plotting
+d-----       08/03/2020     20:23                tests
+d-----       08/03/2020     20:23                tseries
+d-----       08/03/2020     20:23                util
+d-----       08/03/2020     20:23                _config
+d-----       08/03/2020     20:23                _libs
+d-----       08/03/2020     20:23                __pycache__
+-a----       08/03/2020     20:22          22364 conftest.py
+-a----       08/03/2020     20:22            312 testing.py
+-a----       08/03/2020     20:22          83705 _testing.py
+-a----       08/03/2020     20:22           2569 _typing.py
+-a----       08/03/2020     20:22            568 _version.py
+-a----       08/03/2020     20:22          10644 __init__.py
+
+PS C:\Users\Rob\Desktop\AWS EC2\python-mega\Section12> py -3 .\third-PartyModules.py
+20.55
+20.55
+22.125
+
+83: Summary: Imported Modules
+
+In this section you learned that:
+
+Builtin objects are all objects that are written inside the Python interpreter in C language.
+
+Builtin modules contain builtins objects.
+
+Some builtin objects are not immediately available in the global namespace. They are parts of a builtin module. To use those objects the module needs to be imported first. E.g.:
+
+import time
+time.sleep(5)
+A list of all builtin modules can be printed out with:
+
+import sys
+sys.builtin_module_names
+Standard libraries is a jargon that includes both builtin modules written in C and also modules written in Python.
+
+Standard libraries written in Python reside in the Python installation directory as .py files. You can find their directory path with sys.prefix.
+
+Packages are a collection of .py modules.
+
+Third-party libraries are packages or modules written by third-party persons (not the Python core development team).
+
+Third-party libraries can be installed from the terminal/command line:
+
+Windows:
+
+pip install pandas
+
+Mac and Linux:
+
+pip3 install pandas
+
+My Windows:
+
+pip3.8.exe install pandas
+
+FYI
+>>> import sys
+>>> sys.prefix
+'C:\\Users\\Rob\\AppData\\Local\\Programs\\Python\\Python38'
