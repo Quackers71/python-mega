@@ -7,6 +7,7 @@ data = json.load(open("data.json"))
 ''' create the translate function and return 'data[w]'
     'w' is a Local variable '''
 def translate(w):
+    w = w.lower()
     if w in data:
         return data[w]
     else:
