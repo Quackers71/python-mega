@@ -1682,6 +1682,9 @@ FYI
 
 Section 13: Application 1: Build an Interactive English Dictionary
 
+
+87. Loading JSON Data
+
 >>> import json
 >>> help(json.load)
 Help on function load in module json:
@@ -1720,3 +1723,10 @@ KeyboardInterrupt etc, etc, etc...
 >>> data["rain"]
 ['Precipitation in the form of liquid water drops with diameters greater than 0.5 millimetres.', 
 'To fall from the clouds in drops of water.']
+
+88. Returning the Definition of a Word
+
+py -3 .\app1.py
+Enter a word: dog
+['A common four-legged animal, especially kept by people as a pet or to hunt or guard things.', 
+'A dull, unattractive girl or woman.', 'An iron for holding wood in a fireplace.']
