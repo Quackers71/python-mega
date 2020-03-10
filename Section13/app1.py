@@ -7,7 +7,10 @@ data = json.load(open("data.json"))
 ''' create the translate function and return 'data[w]'
     'w' is a Local variable '''
 def translate(w):
-    return data[w]
+    if w in data:
+        return data[w]
+    else:
+        return "The word doesn't exist!  Please double check it..."
 
 #use the 'word' Global variable for the input function
 word = input("Enter a word: ")
