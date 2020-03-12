@@ -1788,3 +1788,12 @@ get_close_matches(word, possibilities, n=3, cutoff=0.6)
 ['rain', 'train', 'rainy', 'grain', 'drain']
 >>> get_close_matches("rainn", data.keys())[0]   
 'rain'
+
+93. Recommending the Best Match
+
+>>> get_close_matches("ccccccccccccc", data.keys(), cutoff=0.8)
+[]
+>>> get_close_matches("cacacaa", data.keys(), cutoff=0.5)
+['acacia', 'Sciacca', 'cacao']
+>>> get_close_matches("cacacaa", data.keys(), cutoff=0.8)
+[]
