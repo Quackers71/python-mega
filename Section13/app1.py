@@ -31,5 +31,10 @@ def translate(w):
 #use the 'word' Global variable for the input function
 word = input("Enter a word: ")
 
-# printout using the translate function of the Global varaible 'word' input
-print(translate(word))
+# Iterate through the List Object (if it is a List otherwise print output)
+output = translate(word)
+if type(output) == list:
+    for item in output:
+        print(item)
+else:
+    print(output)
