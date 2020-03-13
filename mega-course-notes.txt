@@ -1507,3 +1507,405 @@ with open("file.txt", "a+") as file:
     content = file.write("Even more sample text")
     file.seek(0)
     content = file.read()
+
+
+Section 12: Imported Modules
+
+79. Builtin Modules
+
+>>> import sys
+>>> sys.builtin_module_names
+('_abc', '_ast', '_bisect', '_blake2', '_codecs', '_codecs_cn', '_codecs_hk', 
+'_codecs_iso2022', '_codecs_jp', '_codecs_kr', '_codecs_tw', '_collections', 
+'_contextvars', '_csv', '_datetime', '_functools', '_heapq', '_imp', '_io', 
+'_json', '_locale', '_lsprof', '_md5', '_multibytecodec', '_opcode', '_operator', 
+'_pickle', '_random', '_sha1', '_sha256', '_sha3', '_sha512', '_signal', '_sre', 
+'_stat', '_statistics', '_string', '_struct', '_symtable', '_thread', '_tracemalloc', 
+'_warnings', '_weakref', '_winapi', '_xxsubinterpreters', 'array', 'atexit', 
+'audioop', 'binascii', 'builtins', 'cmath', 'errno', 'faulthandler', 'gc', 
+'itertools', 'marshal', 'math', 'mmap', 'msvcrt', 'nt', 'parser', 'sys', 
+'time', 'winreg', 'xxsubtype', 'zlib')
+>>> dir(time)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'time' is not defined
+>>> import time
+>>> dir(time)
+['_STRUCT_TM_ITEMS', '__doc__', '__loader__', '__name__', '__package__', '__spec__', 
+'altzone', 'asctime', 'ctime', 'daylight', 'get_clock_info', 'gmtime', 'localtime', 
+'mktime', 'monotonic', 'monotonic_ns', 'perf_counter', 'perf_counter_ns', 'process_time', 
+'process_time_ns', 'sleep', 'strftime', 'strptime', 'struct_time', 'thread_time', 
+'thread_time_ns', 'time', 'time_ns', 'timezone', 'tzname']
+>>> help(time.sleep)
+Help on built-in function sleep in module time:
+
+sleep(...)
+    sleep(seconds)
+
+    Delay execution for a given number of seconds.  The argument may be
+    a floating point number for subsecond precision.
+
+>>> time.sleep(3)
+
+80. Standard Python Modules
+
+>>> time.sleep(3)
+>>> import os
+>>> sys.prefix
+'C:\\Users\\Rob\\AppData\\Local\\Programs\\Python\\Python38'
+
+PS C:\Users\Rob\Desktop\AWS EC2\python-mega\Section12> start C:\\Users\\Rob\\AppData\\Local\\Programs\\Python\\Python38
+# Double Click into Lib\ and you will see all the .py Modules i.e. os.py
+
+>>> dir(os)
+['DirEntry', 'F_OK', 'MutableMapping', 'O_APPEND', 'O_BINARY', 'O_CREAT', 'O_EXCL', 'O_NOINHERIT', 
+'O_RANDOM', 'O_RDONLY', 'O_RDWR', 'O_SEQUENTIAL', 'O_SHORT_LIVED', 'O_TEMPORARY', 'O_TEXT', 
+'O_TRUNC', 'O_WRONLY', 'P_DETACH', 'P_NOWAIT', 'P_NOWAITO', 'P_OVERLAY', 'P_WAIT', 'PathLike', 'R_OK', 
+'SEEK_CUR', 'SEEK_END', 'SEEK_SET', 'TMP_MAX', 'W_OK', 'X_OK', '_AddedDllDirectory', '_Environ', 
+'__all__', '__builtins__', '__cached__', '__doc__', '__file__', '__loader__', '__name__', '__package__', 
+'__spec__', '_check_methods', '_execvpe', '_exists', '_exit', '_fspath', '_get_exports_list', '_putenv', 
+'_unsetenv', '_wrap_close', 'abc', 'abort', 'access', 'add_dll_directory', 'altsep', 
+'chdir', 'chmod', 'close', 'closerange', 'cpu_count', 'curdir', 'defpath', 'device_encoding', 'devnull', 
+'dup', 'dup2', 'environ', 'error', 'execl', 'execle', 'execlp', 'execlpe', 'execv', 'execve', 'execvp', 
+'execvpe', 'extsep', 'fdopen', 'fsdecode', 'fsencode', 'fspath', 'fstat', 'fsync', 'ftruncate', 
+'get_exec_path', 'get_handle_inheritable', 'get_inheritable', 'get_terminal_size', 'getcwd', 'getcwdb', 
+'getenv', 'getlogin', 'getpid', 'getppid', 'isatty', 'kill', 'linesep', 'link', 'listdir', 'lseek', 
+'lstat', 'makedirs', 'mkdir', 'name', 'open', 'pardir', 'path', 'pathsep', 'pipe', 'popen', 'putenv', 
+'read', 'readlink', 'remove', 'removedirs', 'rename', 'renames', 'replace', 'rmdir', 'scandir', 'sep', 
+'set_handle_inheritable', 'set_inheritable', 'spawnl', 'spawnle', 'spawnv', 'spawnve', 'st', 'startfile', 
+'stat', 'stat_result', 'statvfs_result', 'strerror', 'supports_bytes_environ', 'supports_dir_fd', 
+'supports_effective_ids', 'supports_fd', 'supports_follow_symlinks', 'symlink', 'sys', 'system', 
+'terminal_size', 'times', 'times_result', 'truncate', 'umask', 'uname_result', 'unlink', 'urandom', 'utime', 
+'waitpid', 'walk', 'write']
+
+81. Third-Party Modules
+
+PS C:\Users\Rob\AppData\Local\Programs\Python\Python38\Scripts> .\pip3.8.exe install pandas       
+Collecting pandas
+  Downloading https://files.pythonhosted.org/packages/68/db/4a6f569775c1dd762d3cbb0505ba0cd93a96db5f34e9fc761ff2a76daefa/pandas-1.0.1-cp38-cp38-win_amd64.whl (9.2MB)
+     |████████████████████████████████| 9.2MB 1.6MB/s 
+Collecting python-dateutil>=2.6.1 (from pandas)
+  Downloading https://files.pythonhosted.org/packages/d4/70/d60450c3dd48ef87586924207ae8907090de0b306af2bce5d134d78615cb/python_dateutil-2.8.1-py2.py3-none-any.whl (227kB)
+     |████████████████████████████████| 235kB 1.1MB/s 
+Collecting numpy>=1.13.3 (from pandas)
+  Downloading https://files.pythonhosted.org/packages/95/47/ea0ae5a778aae07ede486f3dc7cd4b788dc53e11b01a17251b020f76a01d/numpy-1.18.1-cp38-cp38-win_amd64.whl (12.8MB)
+     |████████████████████████████████| 12.8MB 1.3MB/s 
+Collecting pytz>=2017.2 (from pandas)
+  Downloading https://files.pythonhosted.org/packages/e7/f9/f0b53f88060247251bf481fa6ea62cd0d25bf1b11a87888e53ce5b7c8ad2/pytz-2019.3-py2.py3-none-any.whl (509kB)
+     |████████████████████████████████| 512kB 1.6MB/s 
+Collecting six>=1.5 (from python-dateutil>=2.6.1->pandas)
+  Downloading https://files.pythonhosted.org/packages/65/eb/1f97cb97bfc2390a276969c6fae16075da282f5058082d4cb10c6c5c1dba/six-1.14.0-py2.py3-none-any.whl
+Installing collected packages: six, python-dateutil, numpy, pytz, pandas
+  WARNING: The script f2py.exe is installed in 'c:\users\rob\appdata\local\programs\python\python38\Scripts' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+Successfully installed numpy-1.18.1 pandas-1.0.1 python-dateutil-2.8.1 pytz-2019.3 six-1.14.0     
+WARNING: You are using pip version 19.2.3, however version 20.0.2 is available.
+You should consider upgrading via the 'python -m pip install --upgrade pip' command.
+PS C:\Users\Rob\AppData\Local\Programs\Python\Python38\Scripts> ls C:\Users\Rob\AppData\Local\Programs\Python\Python38\Lib\site-packages\pandas
+
+
+    Directory: C:\Users\Rob\AppData\Local\Programs\Python\Python38\Lib\site-packages\pandas       
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----       08/03/2020     20:23                api
+d-----       08/03/2020     20:23                arrays
+d-----       08/03/2020     20:23                compat
+d-----       08/03/2020     20:23                core
+d-----       08/03/2020     20:23                errors
+d-----       08/03/2020     20:23                io
+d-----       08/03/2020     20:23                plotting
+d-----       08/03/2020     20:23                tests
+d-----       08/03/2020     20:23                tseries
+d-----       08/03/2020     20:23                util
+d-----       08/03/2020     20:23                _config
+d-----       08/03/2020     20:23                _libs
+d-----       08/03/2020     20:23                __pycache__
+-a----       08/03/2020     20:22          22364 conftest.py
+-a----       08/03/2020     20:22            312 testing.py
+-a----       08/03/2020     20:22          83705 _testing.py
+-a----       08/03/2020     20:22           2569 _typing.py
+-a----       08/03/2020     20:22            568 _version.py
+-a----       08/03/2020     20:22          10644 __init__.py
+
+cd 'C:\Users\Rob\Desktop\AWS EC2\python-mega\'
+
+PS C:\Users\Rob\Desktop\AWS EC2\python-mega\Section12> py -3 .\third-PartyModules.py
+20.55
+20.55
+22.125
+
+83: Summary: Imported Modules
+
+In this section you learned that:
+
+Builtin objects are all objects that are written inside the Python interpreter in C language.
+
+Builtin modules contain builtins objects.
+
+Some builtin objects are not immediately available in the global namespace. They are parts of a builtin module. To use those objects the module needs to be imported first. E.g.:
+
+import time
+time.sleep(5)
+A list of all builtin modules can be printed out with:
+
+import sys
+sys.builtin_module_names
+Standard libraries is a jargon that includes both builtin modules written in C and also modules written in Python.
+
+Standard libraries written in Python reside in the Python installation directory as .py files. You can find their directory path with sys.prefix.
+
+Packages are a collection of .py modules.
+
+Third-party libraries are packages or modules written by third-party persons (not the Python core development team).
+
+Third-party libraries can be installed from the terminal/command line:
+
+Windows:
+
+pip install pandas
+
+Mac and Linux:
+
+pip3 install pandas
+
+My Windows:
+
+pip3.8.exe install pandas
+
+FYI
+>>> import sys
+>>> sys.prefix
+'C:\\Users\\Rob\\AppData\\Local\\Programs\\Python\\Python38'
+
+
+Section 13: Application 1: Build an Interactive English Dictionary
+
+
+87. Loading JSON Data
+
+>>> import json
+>>> help(json.load)
+Help on function load in module json:
+
+load(fp, *, cls=None, object_hook=None, parse_float=None, parse_int=None, 
+parse_constant=None, object_pairs_hook=None, **kw)
+    Deserialize ``fp`` (a ``.read()``-supporting file-like object containing
+    a JSON document) to a Python object.
+
+    ``object_hook`` is an optional function that will be called with the
+    result of any object literal decode (a ``dict``). The return value of
+    ``object_hook`` will be used instead of the ``dict``. This feature
+    can be used to implement custom decoders (e.g. JSON-RPC class hinting).
+
+    ``object_pairs_hook`` is an optional function that will be called with the
+    result of any object literal decoded with an ordered list of pairs.  The
+    return value of ``object_pairs_hook`` will be used instead of the ``dict``.
+    This feature can be used to implement custom decoders.  If ``object_hook``
+    is also defined, the ``object_pairs_hook`` takes priority.
+
+    To use a custom ``JSONDecoder`` subclass, specify it with the ``cls``
+    kwarg; otherwise ``JSONDecoder`` is used.
+
+>>> import json
+>>> d = open("data.json")
+>>> data = json.load(d)
+>>> print(type(data))
+<class 'dict'>
+>>> print(data)
+ doing something for customers, but that do not produce goods.'], 'test': 
+ ['To carry out an examination on (a substance, material, or system) by applying 
+ some chemical or physical procedure designed to indicate tTraceback 
+ (most recent call last):
+  File "<stdin>", line 1, in <module>
+KeyboardInterrupt etc, etc, etc...
+>>> data["rain"]
+['Precipitation in the form of liquid water drops with diameters greater than 0.5 millimetres.', 
+'To fall from the clouds in drops of water.']
+
+88. Returning the Definition of a Word
+
+py -3 .\app1.py
+Enter a word: dog
+['A common four-legged animal, especially kept by people as a pet or to hunt or guard things.', 
+'A dull, unattractive girl or woman.', 'An iron for holding wood in a fireplace.']
+
+91. Similarity Ratio Between Two Words
+
+# List of Standard Libraries you can import into Python via:
+https://docs.python.org/3/library/index.html
+
+>>> import difflib
+>>> from difflib import SequenceMatcher
+>>> SequenceMatcher(None, "rainn", "rain")
+<difflib.SequenceMatcher object at 0x000001C9247B2C40>
+>>> SequenceMatcher(None, "rainn", "rain").ratio()
+0.8888888888888888
+
+92. Best Matches out of a List of Words
+
+>>> from difflib import get_close_matches
+>>> help(get_close_matches)
+Help on function get_close_matches in module difflib:
+
+get_close_matches(word, possibilities, n=3, cutoff=0.6)
+    Use SequenceMatcher to return list of the best "good enough" matches.
+    
+    word is a sequence for which close matches are desired (typically a
+    string).
+
+    possibilities is a list of sequences against which to match word
+    (typically a list of strings).
+
+    Optional arg n (default 3) is the maximum number of close matches to
+    return.  n must be > 0.
+
+    Optional arg cutoff (default 0.6) is a float in [0, 1].  Possibilities
+    that don't score at least that similar to word are ignored.
+
+    The best (no more than n) matches among the possibilities are returned
+    in a list, sorted by similarity score, most similar first.
+
+    >>> get_close_matches("appel", ["ape", "apple", "peach", "puppy"])
+    ['apple', 'ape']
+    >>> import keyword as _keyword
+    >>> get_close_matches("wheel", _keyword.kwlist)
+    ['while']
+    >>> get_close_matches("Apple", _keyword.kwlist)
+    []
+    >>> get_close_matches("accept", _keyword.kwlist)
+    ['except']
+
+>>> get_close_matches("rainn", ["help", "pyramid", "rain"])
+['rain']
+
+>>> data.keys()  # will output all of the dict keys from File Object
+
+>>> get_close_matches("rainn", data.keys())
+['rain', 'train', 'rainy']
+>>> get_close_matches("rainn", data.keys(), n=5) 
+['rain', 'train', 'rainy', 'grain', 'drain']
+>>> get_close_matches("rainn", data.keys())[0]   
+'rain'
+
+93. Recommending the Best Match
+
+>>> get_close_matches("ccccccccccccc", data.keys(), cutoff=0.8)
+[]
+>>> get_close_matches("cacacaa", data.keys(), cutoff=0.5)
+['acacia', 'Sciacca', 'cacao']
+>>> get_close_matches("cacacaa", data.keys(), cutoff=0.8)
+[]
+
+94. Confirmation from the User
+
+Enter a word: trop
+Did you mean trope instead? Enter Y if yes, or N if no: y
+['A rhetorical figure of speech in which a word or phrase is used 
+other than in a literal manner.']
+
+Enter a word: trop
+Did you mean trope instead? Enter Y if yes, or N if no: Y
+['A rhetorical figure of speech in which a word or phrase is used 
+other than in a literal manner.']
+
+Enter a word: trop
+Did you mean trope instead? Enter Y if yes, or N if no: N
+The word doesn't exist!  Please double check it...
+
+Enter a word: trop
+Did you mean trope instead? Enter Y if yes, or N if no: n
+The word doesn't exist!  Please double check it...
+
+Enter a word: oqwiueoiweuiowjkldns
+The word doesn't exist!  Please double check it...
+
+
+Section 14: Project Exercise with Python and MySQL: Interactive English Dictionary
+
+PS C:\Users\Rob\Desktop\AWS EC2\python-mega\Section14> cd C:\Users\Rob\AppData\Local\Programs\Python\Python38\Scripts\
+PS C:\Users\Rob\AppData\Local\Programs\Python\Python38\Scripts> .\pip3.8.exe install mysql-connector-python
+Collecting mysql-connector-python
+  Downloading https://files.pythonhosted.org/packages/5c/1e/3f372b31853b868153e453146d99ca787da3eb4bf0b654590b829b262afa/mysql_connector_python-8.0.19-py2.py3-none-any.whl (355kB)
+     |████████████████████████████████| 358kB 1.6MB/s 
+Collecting dnspython==1.16.0 (from mysql-connector-python)
+  Downloading https://files.pythonhosted.org/packages/ec/d3/3aa0e7213ef72b8585747aa0e271a9523e713813b9a20177ebe1e939deb0/dnspython-1.16.0-py2.py3-none-any.whl (188kB)
+     |████████████████████████████████| 194kB 2.2MB/s 
+Collecting protobuf==3.6.1 (from mysql-connector-python)
+  Downloading https://files.pythonhosted.org/packages/77/78/a7f1ce761e2c738e209857175cd4f90a8562d1bde32868a8cd5290d58926/protobuf-3.6.1-py2.py3-none-any.whl (390kB)
+     |████████████████████████████████| 399kB 2.2MB/s 
+Requirement already satisfied: setuptools in c:\users\rob\appdata\local\programs\python\python38\lib\site-packages (from protobuf==3.6.1->mysql-connector-python) (41.2.0)
+Requirement already satisfied: six>=1.9 in c:\users\rob\appdata\local\programs\python\python38\lib\site-packages (from protobuf==3.6.1->mysql-connector-python) (1.14.0)
+Installing collected packages: dnspython, protobuf, mysql-connector-python
+Successfully installed dnspython-1.16.0 mysql-connector-python-8.0.19 protobuf-3.6.1
+WARNING: You are using pip version 19.2.3, however version 20.0.2 is available.
+You should consider upgrading via the 'python -m pip install --upgrade pip' command.
+
+cd 'C:\Users\Rob\Desktop\AWS EC2\python-mega\Section14'
+
+PS C:\Users\Rob\Desktop\AWS EC2\python-mega\Section14> py -3 .\exercise.py
+Term used in GIS technologies in the vector type of internal data organization: spatial data are divided into point, line and polygon types.
+The descendants of one individual.
+A succession of notes forming a distinctive sequence.
+A measure of length equal to one twelfth of an inch.
+An infinitely long, infinitely thin, not bent line in geometry.
+A mark that is long relative to its width.
+PS C:\Users\Rob\Desktop\AWS EC2\python-mega\Section14> py -3 .\exercise.py
+[]
+No results found!
+PS C:\Users\Rob\Desktop\AWS EC2\python-mega\Section14> py -3 .\exercise.py
+Enter a Word: dog
+A common four-legged animal, especially kept by people as a pet or to hunt or guard things.       
+A dull, unattractive girl or woman.
+An iron for holding wood in a fireplace.
+PS C:\Users\Rob\Desktop\AWS EC2\python-mega\Section14> py -3 .\exercise.py
+Enter a Word: donkey
+A domesticated animal, Equus asinus.
+PS C:\Users\Rob\Desktop\AWS EC2\python-mega\Section14> py -3 .\exercise.py
+Enter a Word: Donkey
+A domesticated animal, Equus asinus.
+PS C:\Users\Rob\Desktop\AWS EC2\python-mega\Section14> py -3 .\exercise.py
+Enter a Word: USA
+A country and federal republic in North America located north of Mexico and south of Canada, including Alaska, Hawaii and overseas territories.
+
+
+102. More SQL Statements
+
+SELECT * FROM Dictionary WHERE length(Expression) < 2
+
+PS C:\Users\Rob\Desktop\AWS EC2\python-mega\Section14> py -3 .\exercise.py
+('I', 'The speaker or writer referring to himself or herself alone.')
+('I', 'The capitalized version of the ninth letter of the Latin alphabet.')
+('a', 'One; any indefinite example of [indefinite article].')
+('a', 'One certain or particular.')
+('a', 'To; each; per.')
+('a', 'Singular feminine of the indefinite article')
+('a', 'The masculine singular indefinite article.')
+('a', 'A certain; a particular.')
+('a', 'Some; about')
+('a', 'A work by.')
+('a', '[The indefinite article, used in a negative construction.]')
+('C', 'A musical note.')
+('C', 'A general-purpose computer programming language developed in 1972 by Dennis Ritchie at the 
+Bell Telephone Laboratories for use with the Unix operating system.')
+('E', 'A spoken language in China')
+('E', 'A chemically modified amphetamine that has hallucinogenic as well as stimulant properties.')
+('E', 'Musical note between D and F.')
+('B', 'The musical note between A and C.')
+('U', 'ISO 639-6 entity')
+('O', 'ISO 639-6 entity')
+('O', 'Abbreviation of octavo, a book size.')
+('F', 'Music note between mi and sol.')
+('F', 'The abbreviation for folio, a book size.')
+('F', 'The abbreviation for folio, a book size.')
+('A', 'A musical note between G and B.')
+('D', 'Musical note between C and E.')
+('D', 'In snooker billards, the area on the table where the white cue ball has its frame-initial position.')
+('G', 'Musical note between F and A.')
+('V', 'Cranial nerve responsible for sensation in the face.')
+('J', 'A cigarette rolled using cannabis.')
+('L', 'A cigarette rolled using cannabis.')
+('X', 'A chemically modified amphetamine that has hallucinogenic as well as stimulant properties.')
+('Q', 'Abbreviation of quarto, a book size .')
+
