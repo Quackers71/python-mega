@@ -11,6 +11,9 @@ def translate(w):
     w = w.lower()
     if w in data:
         return data[w]
+    # If the user entered "dog" this will check for "Dog" as well.
+    elif w.title() in data:
+        return data[w.title()]
     # Check the length of the close match and is greater than 0
     elif len(get_close_matches(w, data.keys())) > 0:
         # Ask User for close word
