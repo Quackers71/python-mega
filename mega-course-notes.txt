@@ -1821,3 +1821,51 @@ The word doesn't exist!  Please double check it...
 Enter a word: oqwiueoiweuiowjkldns
 The word doesn't exist!  Please double check it...
 
+
+Section 14: Project Exercise with Python and MySQL: Interactive English Dictionary
+
+PS C:\Users\Rob\Desktop\AWS EC2\python-mega\Section14> cd C:\Users\Rob\AppData\Local\Programs\Python\Python38\Scripts\
+PS C:\Users\Rob\AppData\Local\Programs\Python\Python38\Scripts> .\pip3.8.exe install mysql-connector-python
+Collecting mysql-connector-python
+  Downloading https://files.pythonhosted.org/packages/5c/1e/3f372b31853b868153e453146d99ca787da3eb4bf0b654590b829b262afa/mysql_connector_python-8.0.19-py2.py3-none-any.whl (355kB)
+     |████████████████████████████████| 358kB 1.6MB/s 
+Collecting dnspython==1.16.0 (from mysql-connector-python)
+  Downloading https://files.pythonhosted.org/packages/ec/d3/3aa0e7213ef72b8585747aa0e271a9523e713813b9a20177ebe1e939deb0/dnspython-1.16.0-py2.py3-none-any.whl (188kB)
+     |████████████████████████████████| 194kB 2.2MB/s 
+Collecting protobuf==3.6.1 (from mysql-connector-python)
+  Downloading https://files.pythonhosted.org/packages/77/78/a7f1ce761e2c738e209857175cd4f90a8562d1bde32868a8cd5290d58926/protobuf-3.6.1-py2.py3-none-any.whl (390kB)
+     |████████████████████████████████| 399kB 2.2MB/s 
+Requirement already satisfied: setuptools in c:\users\rob\appdata\local\programs\python\python38\lib\site-packages (from protobuf==3.6.1->mysql-connector-python) (41.2.0)
+Requirement already satisfied: six>=1.9 in c:\users\rob\appdata\local\programs\python\python38\lib\site-packages (from protobuf==3.6.1->mysql-connector-python) (1.14.0)
+Installing collected packages: dnspython, protobuf, mysql-connector-python
+Successfully installed dnspython-1.16.0 mysql-connector-python-8.0.19 protobuf-3.6.1
+WARNING: You are using pip version 19.2.3, however version 20.0.2 is available.
+You should consider upgrading via the 'python -m pip install --upgrade pip' command.
+
+cd 'C:\Users\Rob\Desktop\AWS EC2\python-mega\Section14'
+
+PS C:\Users\Rob\Desktop\AWS EC2\python-mega\Section14> py -3 .\exercise.py
+Term used in GIS technologies in the vector type of internal data organization: spatial data are divided into point, line and polygon types.
+The descendants of one individual.
+A succession of notes forming a distinctive sequence.
+A measure of length equal to one twelfth of an inch.
+An infinitely long, infinitely thin, not bent line in geometry.
+A mark that is long relative to its width.
+PS C:\Users\Rob\Desktop\AWS EC2\python-mega\Section14> py -3 .\exercise.py
+[]
+No results found!
+PS C:\Users\Rob\Desktop\AWS EC2\python-mega\Section14> py -3 .\exercise.py
+Enter a Word: dog
+A common four-legged animal, especially kept by people as a pet or to hunt or guard things.       
+A dull, unattractive girl or woman.
+An iron for holding wood in a fireplace.
+PS C:\Users\Rob\Desktop\AWS EC2\python-mega\Section14> py -3 .\exercise.py
+Enter a Word: donkey
+A domesticated animal, Equus asinus.
+PS C:\Users\Rob\Desktop\AWS EC2\python-mega\Section14> py -3 .\exercise.py
+Enter a Word: Donkey
+A domesticated animal, Equus asinus.
+PS C:\Users\Rob\Desktop\AWS EC2\python-mega\Section14> py -3 .\exercise.py
+Enter a Word: USA
+A country and federal republic in North America located north of Mexico and south of Canada, including Alaska, Hawaii and overseas territories.
+
