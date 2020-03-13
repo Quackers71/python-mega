@@ -1869,3 +1869,43 @@ PS C:\Users\Rob\Desktop\AWS EC2\python-mega\Section14> py -3 .\exercise.py
 Enter a Word: USA
 A country and federal republic in North America located north of Mexico and south of Canada, including Alaska, Hawaii and overseas territories.
 
+
+102. More SQL Statements
+
+SELECT * FROM Dictionary WHERE length(Expression) < 2
+
+PS C:\Users\Rob\Desktop\AWS EC2\python-mega\Section14> py -3 .\exercise.py
+('I', 'The speaker or writer referring to himself or herself alone.')
+('I', 'The capitalized version of the ninth letter of the Latin alphabet.')
+('a', 'One; any indefinite example of [indefinite article].')
+('a', 'One certain or particular.')
+('a', 'To; each; per.')
+('a', 'Singular feminine of the indefinite article')
+('a', 'The masculine singular indefinite article.')
+('a', 'A certain; a particular.')
+('a', 'Some; about')
+('a', 'A work by.')
+('a', '[The indefinite article, used in a negative construction.]')
+('C', 'A musical note.')
+('C', 'A general-purpose computer programming language developed in 1972 by Dennis Ritchie at the 
+Bell Telephone Laboratories for use with the Unix operating system.')
+('E', 'A spoken language in China')
+('E', 'A chemically modified amphetamine that has hallucinogenic as well as stimulant properties.')
+('E', 'Musical note between D and F.')
+('B', 'The musical note between A and C.')
+('U', 'ISO 639-6 entity')
+('O', 'ISO 639-6 entity')
+('O', 'Abbreviation of octavo, a book size.')
+('F', 'Music note between mi and sol.')
+('F', 'The abbreviation for folio, a book size.')
+('F', 'The abbreviation for folio, a book size.')
+('A', 'A musical note between G and B.')
+('D', 'Musical note between C and E.')
+('D', 'In snooker billards, the area on the table where the white cue ball has its frame-initial position.')
+('G', 'Musical note between F and A.')
+('V', 'Cranial nerve responsible for sensation in the face.')
+('J', 'A cigarette rolled using cannabis.')
+('L', 'A cigarette rolled using cannabis.')
+('X', 'A chemically modified amphetamine that has hallucinogenic as well as stimulant properties.')
+('Q', 'Abbreviation of quarto, a book size .')
+

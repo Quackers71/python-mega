@@ -9,14 +9,14 @@ database = "ardit700_pm1database"
 
 cursor = con.cursor()
 
-word = input("Enter a Word: ")
+#word = input("Enter a Word: ")
 
-query = cursor.execute("SELECT * FROM Dictionary WHERE Expression = '%s'" % word)
+query = cursor.execute("SELECT * FROM Dictionary WHERE length(Expression) < 2")
 results = cursor.fetchall()
 
 if results:
     for result in results:
-        print(result[1])
+        print(result)
 else:
     print(results)
     print("No results found!")
