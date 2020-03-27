@@ -1909,3 +1909,9 @@ Bell Telephone Laboratories for use with the Unix operating system.')
 ('X', 'A chemically modified amphetamine that has hallucinogenic as well as stimulant properties.')
 ('Q', 'Abbreviation of quarto, a book size .')
 
+py -3 .\exercise.py
+Enter a Word: rugby
+A sport originally from Rugby, England where players in a team
+of 15 attempt to score points by touching an ovid ball to the 
+ground in the area past their opponent’s territory or kicking 
+the ball between goalposts and over a crossbar.
