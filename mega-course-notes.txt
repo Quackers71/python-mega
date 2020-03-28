@@ -1935,6 +1935,9 @@ pip3.8 install pandas
 # then
 pip3.8 install ipython
 
+
+105. Getting Started with Pandas
+
 # from a CMD Prompt run:
 C:\Users\Rob\Desktop\AWS EC2\python-mega\Section15>ipython
 Python 3.8.2 (tags/v3.8.2:7b3ab59, Feb 25 2020, 23:03:10) [MSC v.1916 64 bit (AMD64)]
@@ -2013,4 +2016,7 @@ Out[27]: 6.0
 
 In [28]: df1.Price.max()
 Out[28]: 10
+
+
+106. Getting Started with Jupyter Notebooks
 
