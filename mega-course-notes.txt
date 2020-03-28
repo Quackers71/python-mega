@@ -1935,3 +1935,82 @@ pip3.8 install pandas
 # then
 pip3.8 install ipython
 
+# from a CMD Prompt run:
+C:\Users\Rob\Desktop\AWS EC2\python-mega\Section15>ipython
+Python 3.8.2 (tags/v3.8.2:7b3ab59, Feb 25 2020, 23:03:10) [MSC v.1916 64 bit (AMD64)]
+Type 'copyright', 'credits' or 'license' for more information
+IPython 7.13.0 -- An enhanced Interactive Python. Type '?' for help.
+
+In [1]: import pandas
+
+In [2]: df1=pandas.DataFrame([[2,4,6],[10,20,30]])
+
+In [3]: df1
+Out[3]:
+    0   1   2
+0   2   4   6
+1  10  20  30
+
+In [4]: df1=pandas.DataFrame([[2,4,6],[10,20,30]],columns=["Price","Age","Value"])
+
+In [5]: df1
+Out[5]:
+   Price  Age  Value
+0      2    4      6
+1     10   20     30
+
+In [6]: df1=pandas.DataFrame([[2,4,6],[10,20,30]],columns=["Price","Age","Value"],index=["First","Second"])
+
+In [7]: df1
+Out[7]:
+        Price  Age  Value
+First       2    4      6
+Second     10   20     30
+
+In [8]: df2=pandas.DataFrame([{"Name":"John"},{"Name":"Jack"}])
+
+In [9]: df2
+Out[9]:
+   Name
+0  John
+1  Jack
+
+In [10]: df2=pandas.DataFrame([{"Name":"Jack","Surname":"Robinson"},{"Name":"John"}])
+
+In [11]: df2
+Out[11]:
+   Name   Surname
+0  Jack  Robinson
+1  John       NaN
+
+In [19]: type(df1)
+Out[19]: pandas.core.frame.DataFrame
+
+In [22]: df1.mean()
+Out[22]:
+Price     6.0
+Age      12.0
+Value    18.0
+dtype: float64
+
+In [23]: df1.mean().mean()
+Out[23]: 12.0
+
+In [24]: type(df1.mean())
+Out[24]: pandas.core.series.Series
+
+In [25]: df1.Price
+Out[25]:
+First      2
+Second    10
+Name: Price, dtype: int64
+
+In [26]: type(df1.Price)
+Out[26]: pandas.core.series.Series
+
+In [27]: df1.Price.mean()
+Out[27]: 6.0
+
+In [28]: df1.Price.max()
+Out[28]: 10
+
