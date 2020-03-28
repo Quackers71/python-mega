@@ -1915,3 +1915,23 @@ A sport originally from Rugby, England where players in a team
 of 15 attempt to score points by touching an ovid ball to the 
 ground in the area past their opponent’s territory or kicking 
 the ball between goalposts and over a crossbar.
+
+
+## Section 15: Data Analysis with Pandas
+
+In computer programming, pandas is a software library written for 
+the Python programming language for data manipulation and analysis. 
+In particular, it offers data structures and operations for manipulating 
+numerical tables and time series. It is free software released under 
+the three-clause BSD license.
+
+cd C:\Users\Rob\AppData\Local\Programs\Python\Python38\Scripts\
+.\pip3.8.exe install pandas
+cd 'C:\Users\Rob\Desktop\AWS EC2\python-mega'
+
+# or just use:
+pip3.8 install pandas
+
+# then
+pip3.8 install ipython
+
