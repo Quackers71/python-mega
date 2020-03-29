@@ -2020,3 +2020,6 @@ Out[28]: 10
 
 106. Getting Started with Jupyter Notebooks
 
+# from a CMD Prompt run:
+pip3.8 install jupyter
+
