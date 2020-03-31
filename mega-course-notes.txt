@@ -2039,3 +2039,11 @@ Successfully installed xlrd-1.2.0
 df5=pandas.read_csv("supermarkets-semi-colons.txt", sep=';')
 df5
 
+116. Indexing and Slicing
+
+# Two ways to do this
+Label based Indexing     - Column Labels
+Position based Indexing  - Index Labels
+
+df7.loc["735 Dolores St":"332 Hill St","ID":"Employees"]
+
