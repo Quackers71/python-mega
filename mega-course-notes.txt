@@ -2033,3 +2033,9 @@ Collecting xlrd
 Installing collected packages: xlrd
 Successfully installed xlrd-1.2.0
 
+112. Loading TXT Files
+
+# When using Jupyter and outputing a file with semi colons use sep=',' i.e.
+df5=pandas.read_csv("supermarkets-semi-colons.txt", sep=';')
+df5
+
