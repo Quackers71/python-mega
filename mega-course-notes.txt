@@ -2047,3 +2047,61 @@ Position based Indexing  - Index Labels
 
 df7.loc["735 Dolores St":"332 Hill St","ID":"Employees"]
 
+
+List of Commands used in this Section:
+
+import os
+os.listdir()
+import pandas
+df1=pandas.read_csv("supermarkets.csv")
+df1
+df2=pandas.read_json("supermarkets.json")
+df2
+df2.set_index("ID")
+df3=pandas.read_excel("supermarkets.xlsx", sheet_name=0)
+df3
+df4=pandas.read_csv("supermarkets-commas.txt")
+df4
+df5=pandas.read_csv("supermarkets-semi-colons.txt", sep=';')
+df5
+df8=pandas.read_csv("data.txt", header = None)
+df8
+df8.columns = ["ID", "Address", "City", "ZIP", "Country", "Name", "Employees"]
+df8
+df8.set_index("ID")
+df8
+df9 = df8.set_index("ID")
+df9
+df8.set_index("ID", inplace=True)
+df8
+df8.set_index("Address", inplace=True)
+df8
+df8.set_index("Name", inplace=True, drop=False)
+df8
+df7=pandas.read_json("supermarkets.json")
+df7
+df7=df7.set_index("Address")
+df7
+df7.loc["735 Dolores St":"332 Hill St","ID":"Employees"]
+list(df7.loc[:,"Name"])
+df7
+df7.iloc[3,1:4]
+df7
+df7.drop("City",1)
+df7.drop(df7.columns[0:3],1)
+df7.columns
+df7
+len(df7.index)
+Out[13]: 6 # output
+df7["Continent"]=df7.shape[0]*["North America"]
+df7
+df7.shape
+Out[17]: (6, 8) # output
+df7["Continent"]=df7["Country"]+ ", " + "North America"
+df7
+df7_t=df7.T
+df7
+df7_t["My Address"]=[7,"10 Deki St","Suva","ND","Fiji","Rob Q",120,"Asia Pacific"]
+df7_t
+df7=df7_t.T
+df7
