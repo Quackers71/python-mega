@@ -2119,3 +2119,15 @@ change them to these
         nom = ArcGIS()
 
 The rest of the code remains the same.
+
+120. Example: Geocoding Addresses with Pandas and Geopy
+
+PS C:\Users\Rob\Desktop\AWS EC2\python-mega\Section15> pip3.8 install geopy
+Collecting geopy  
+  Downloading https://files.pythonhosted.org/packages/53/fc/3d1b47e8e82ea12c25203929efb1b964918a77067a874b2c7631e2ec35ec/geopy-1.21.0-py2.py3-none-any.whl (104kB)
+     |████████████████████████████████| 112kB 2.2MB/s 
+Collecting geographiclib<2,>=1.49 (from geopy)
+  Downloading https://files.pythonhosted.org/packages/8b/62/26ec95a98ba64299163199e95ad1b0e34ad3f4e176e221c40245f211e425/geographiclib-1.50-py3-none-any.whl
+Installing collected packages: geographiclib, geopy
+Successfully installed geographiclib-1.50 geopy-1.21.0
+
