@@ -2131,3 +2131,28 @@ Collecting geographiclib<2,>=1.49 (from geopy)
 Installing collected packages: geographiclib, geopy
 Successfully installed geographiclib-1.50 geopy-1.21.0
 
+Commands for the last Exercise120.:
+
+import geopy
+dir(geopy)
+from geopy.geocoders import ArcGIS
+nom = ArcGIS()
+nope=nom.geocode("735 Dolores St, San Francisco, CA 94119")
+print(nope)
+nom.geocode("3995 23rd St, San Francisco, CA 941114")
+y=nom.geocode("3995 23rd St, San Francisco, CA 941114")
+y.latitude
+y.longitude
+type(y)
+df=pandas.read_csv("supermarkets.csv")
+df
+df["Address"]=df["Address"]+", "+df["City"]+", "+df["State"]+", "+df["Country"]
+df
+df["Coordinates"]=df["Address"].apply(nom.geocode)
+df
+df.Coordinates[0]
+df.Coordinates[0].latitude
+df["Latitude"]=df["Coordinates"].apply(lambda x: x.latitude if x != None else None)
+df["Longitude"]=df["Coordinates"].apply(lambda x: x.longitude if x != None else None)
+df
+
