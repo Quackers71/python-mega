@@ -1909,3 +1909,250 @@ Bell Telephone Laboratories for use with the Unix operating system.')
 ('X', 'A chemically modified amphetamine that has hallucinogenic as well as stimulant properties.')
 ('Q', 'Abbreviation of quarto, a book size .')
 
+py -3 .\exercise.py
+Enter a Word: rugby
+A sport originally from Rugby, England where players in a team
+of 15 attempt to score points by touching an ovid ball to the 
+ground in the area past their opponent’s territory or kicking 
+the ball between goalposts and over a crossbar.
+
+
+## Section 15: Data Analysis with Pandas
+
+In computer programming, pandas is a software library written for 
+the Python programming language for data manipulation and analysis. 
+In particular, it offers data structures and operations for manipulating 
+numerical tables and time series. It is free software released under 
+the three-clause BSD license.
+
+cd C:\Users\Rob\AppData\Local\Programs\Python\Python38\Scripts\
+.\pip3.8.exe install pandas
+cd 'C:\Users\Rob\Desktop\AWS EC2\python-mega'
+
+# or just use:
+pip3.8 install pandas
+
+# then
+pip3.8 install ipython
+
+
+105. Getting Started with Pandas
+
+# from a CMD Prompt run:
+C:\Users\Rob\Desktop\AWS EC2\python-mega\Section15>ipython
+Python 3.8.2 (tags/v3.8.2:7b3ab59, Feb 25 2020, 23:03:10) [MSC v.1916 64 bit (AMD64)]
+Type 'copyright', 'credits' or 'license' for more information
+IPython 7.13.0 -- An enhanced Interactive Python. Type '?' for help.
+
+In [1]: import pandas
+
+In [2]: df1=pandas.DataFrame([[2,4,6],[10,20,30]])
+
+In [3]: df1
+Out[3]:
+    0   1   2
+0   2   4   6
+1  10  20  30
+
+In [4]: df1=pandas.DataFrame([[2,4,6],[10,20,30]],columns=["Price","Age","Value"])
+
+In [5]: df1
+Out[5]:
+   Price  Age  Value
+0      2    4      6
+1     10   20     30
+
+In [6]: df1=pandas.DataFrame([[2,4,6],[10,20,30]],columns=["Price","Age","Value"],index=["First","Second"])
+
+In [7]: df1
+Out[7]:
+        Price  Age  Value
+First       2    4      6
+Second     10   20     30
+
+In [8]: df2=pandas.DataFrame([{"Name":"John"},{"Name":"Jack"}])
+
+In [9]: df2
+Out[9]:
+   Name
+0  John
+1  Jack
+
+In [10]: df2=pandas.DataFrame([{"Name":"Jack","Surname":"Robinson"},{"Name":"John"}])
+
+In [11]: df2
+Out[11]:
+   Name   Surname
+0  Jack  Robinson
+1  John       NaN
+
+In [19]: type(df1)
+Out[19]: pandas.core.frame.DataFrame
+
+In [22]: df1.mean()
+Out[22]:
+Price     6.0
+Age      12.0
+Value    18.0
+dtype: float64
+
+In [23]: df1.mean().mean()
+Out[23]: 12.0
+
+In [24]: type(df1.mean())
+Out[24]: pandas.core.series.Series
+
+In [25]: df1.Price
+Out[25]:
+First      2
+Second    10
+Name: Price, dtype: int64
+
+In [26]: type(df1.Price)
+Out[26]: pandas.core.series.Series
+
+In [27]: df1.Price.mean()
+Out[27]: 6.0
+
+In [28]: df1.Price.max()
+Out[28]: 10
+
+
+106. Getting Started with Jupyter Notebooks
+
+# from a CMD Prompt run:
+pip3.8 install jupyter
+
+110. Note on Loading Excel Files
+
+# from a CMD Prompt run:
+pip3.8 install xlrd   
+Collecting xlrd   
+  Downloading https://files.pythonhosted.org/packages/b0/16/63576a1a001752e34bf8ea62e367997530dc553b689356b9879339cf45a4/xlrd-1.2.0-py2.py3-none-any.whl (103kB)
+     |████████████████████████████████| 112kB 1.6MB/s 
+Installing collected packages: xlrd
+Successfully installed xlrd-1.2.0
+
+112. Loading TXT Files
+
+# When using Jupyter and outputing a file with semi colons use sep=',' i.e.
+df5=pandas.read_csv("supermarkets-semi-colons.txt", sep=';')
+df5
+
+116. Indexing and Slicing
+
+# Two ways to do this
+Label based Indexing     - Column Labels
+Position based Indexing  - Index Labels
+
+df7.loc["735 Dolores St":"332 Hill St","ID":"Employees"]
+
+
+List of Commands used in this Section:
+
+import os
+os.listdir()
+import pandas
+df1=pandas.read_csv("supermarkets.csv")
+df1
+df2=pandas.read_json("supermarkets.json")
+df2
+df2.set_index("ID")
+df3=pandas.read_excel("supermarkets.xlsx", sheet_name=0)
+df3
+df4=pandas.read_csv("supermarkets-commas.txt")
+df4
+df5=pandas.read_csv("supermarkets-semi-colons.txt", sep=';')
+df5
+df8=pandas.read_csv("data.txt", header = None)
+df8
+df8.columns = ["ID", "Address", "City", "ZIP", "Country", "Name", "Employees"]
+df8
+df8.set_index("ID")
+df8
+df9 = df8.set_index("ID")
+df9
+df8.set_index("ID", inplace=True)
+df8
+df8.set_index("Address", inplace=True)
+df8
+df8.set_index("Name", inplace=True, drop=False)
+df8
+df7=pandas.read_json("supermarkets.json")
+df7
+df7=df7.set_index("Address")
+df7
+df7.loc["735 Dolores St":"332 Hill St","ID":"Employees"]
+list(df7.loc[:,"Name"])
+df7
+df7.iloc[3,1:4]
+df7
+df7.drop("City",1)
+df7.drop(df7.columns[0:3],1)
+df7.columns
+df7
+len(df7.index)
+Out[13]: 6 # output
+df7["Continent"]=df7.shape[0]*["North America"]
+df7
+df7.shape
+Out[17]: (6, 8) # output
+df7["Continent"]=df7["Country"]+ ", " + "North America"
+df7
+df7_t=df7.T
+df7
+df7_t["My Address"]=[7,"10 Deki St","Suva","ND","Fiji","Rob Q",120,"Asia Pacific"]
+df7_t
+df7=df7_t.T
+df7
+
+119. Note on Nominatim
+We are going to use Nominatim() in the next video. Nominatim() currently has 
+a bug.  To fix this problem, whenever you see these lines in the next video:
+
+        from geopy.geocoders import Nominatim
+        nom = Nominatim()
+
+change them to these
+
+        from geopy.geocoders import ArcGIS
+        nom = ArcGIS()
+
+The rest of the code remains the same.
+
+120. Example: Geocoding Addresses with Pandas and Geopy
+
+PS C:\Users\Rob\Desktop\AWS EC2\python-mega\Section15> pip3.8 install geopy
+Collecting geopy  
+  Downloading https://files.pythonhosted.org/packages/53/fc/3d1b47e8e82ea12c25203929efb1b964918a77067a874b2c7631e2ec35ec/geopy-1.21.0-py2.py3-none-any.whl (104kB)
+     |████████████████████████████████| 112kB 2.2MB/s 
+Collecting geographiclib<2,>=1.49 (from geopy)
+  Downloading https://files.pythonhosted.org/packages/8b/62/26ec95a98ba64299163199e95ad1b0e34ad3f4e176e221c40245f211e425/geographiclib-1.50-py3-none-any.whl
+Installing collected packages: geographiclib, geopy
+Successfully installed geographiclib-1.50 geopy-1.21.0
+
+Commands for the last Exercise120.:
+
+import geopy
+dir(geopy)
+from geopy.geocoders import ArcGIS
+nom = ArcGIS()
+nope=nom.geocode("735 Dolores St, San Francisco, CA 94119")
+print(nope)
+nom.geocode("3995 23rd St, San Francisco, CA 941114")
+y=nom.geocode("3995 23rd St, San Francisco, CA 941114")
+y.latitude
+y.longitude
+type(y)
+df=pandas.read_csv("supermarkets.csv")
+df
+df["Address"]=df["Address"]+", "+df["City"]+", "+df["State"]+", "+df["Country"]
+df
+df["Coordinates"]=df["Address"].apply(nom.geocode)
+df
+df.Coordinates[0]
+df.Coordinates[0].latitude
+df["Latitude"]=df["Coordinates"].apply(lambda x: x.latitude if x != None else None)
+df["Longitude"]=df["Coordinates"].apply(lambda x: x.longitude if x != None else None)
+df
+
