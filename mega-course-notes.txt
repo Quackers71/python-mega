@@ -2245,3 +2245,12 @@ pip install opencv-python
 
 4. Import cv2 in Python. If you get no errors, you installed OpenCV successfully.
 
+Commands:
+
+import cv2
+im_g=cv2.imread("smallgrey.png",0)
+im_g
+im_g1=cv2.imread("smallgrey.png",1)
+im_g1
+cv2.imwrite("newsmallgrey.png",im_g)
+# output True
