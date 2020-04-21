@@ -2254,3 +2254,17 @@ im_g1=cv2.imread("smallgrey.png",1)
 im_g1
 cv2.imwrite("newsmallgrey.png",im_g)
 # output True
+
+125. Stacking and Splitting Numpy Arrays
+
+ims=numpy.hstack((im_g,im_g))  # hstack() horizontal stack method which on takes one parameter
+                               # stick both parameters in two (()) which makes it a Tuple
+
+ims=numpy.vstack((im_g,im_g,im_g)) # obvi vertical stack method
+
+lst=numpy.hsplit(ims,5)
+print(lst)
+
+lst2=numpy.vsplit(ims,3)
+print(lst2)
+
