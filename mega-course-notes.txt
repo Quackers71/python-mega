@@ -2257,7 +2257,7 @@ cv2.imwrite("newsmallgrey.png",im_g)
 
 125. Stacking and Splitting Numpy Arrays
 
-ims=numpy.hstack((im_g,im_g))  # hstack() horizontal stack method which on takes one parameter
+ims=numpy.hstack((im_g,im_g))  # hstack() horizontal stack method which only takes one parameter
                                # stick both parameters in two (()) which makes it a Tuple
 
 ims=numpy.vstack((im_g,im_g,im_g)) # obvi vertical stack method
