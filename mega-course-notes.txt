@@ -2159,7 +2159,10 @@ df
 
 Section 16: Numpy
 
-111. What is Numpy
+121. What is Numpy
+# NumPy is a general-purpose array-processing package. It provides a high-performance
+# multidimensional array object, and tools for working with these arrays. It is the
+# fundamental package for scientific computing with Python
 
 # Install Numpy with pip
 PS C:\Users\Rob\Desktop\AWS EC2\python-mega\Section16> pip3.8 install numpy
