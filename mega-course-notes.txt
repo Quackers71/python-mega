@@ -2156,3 +2156,118 @@ df["Latitude"]=df["Coordinates"].apply(lambda x: x.latitude if x != None else No
 df["Longitude"]=df["Coordinates"].apply(lambda x: x.longitude if x != None else None)
 df
 
+
+Section 16: Numpy
+
+121. What is Numpy
+# NumPy is a general-purpose array-processing package. It provides a high-performance
+# multidimensional array object, and tools for working with these arrays. It is the
+# fundamental package for scientific computing with Python
+
+# Install Numpy with pip
+PS C:\Users\Rob\Desktop\AWS EC2\python-mega\Section16> pip3.8 install numpy
+Requirement already satisfied: numpy in c:\users\rob\appdata\local\programs\python\python38\lib\site-packages (1.18.1)
+
+
+112. Installing OpenCV
+In the next lecture and in Section 17 we will use the OpenCV image processing library. Let us first make sure you have installed the OpenCV library. OpenCV is also referred to as cv2 in Python.
+
+Install OpenCV:
+1. Open the command line and type:
+pip install opencv-python
+
+PS C:\Users\fcukq\Desktop\python-mega\Section14> pip3.8 install opencv-python
+Collecting opencv-python
+  Downloading https://files.pythonhosted.org/packages/e6/d6/516883f8d2f255c41d8c560ef70c91085f2ceac7b70b7afe41432bd8adbb/opencv_python-4.2.0.34-cp38-cp38-win32.whl (24.2MB)
+     |████████████████████████████████| 24.2MB 3.3MB/s 
+Requirement already satisfied: numpy>=1.17.3 in c:\users\fcukq\appdata\local\programs\python\python38-32\lib\site-packages (from opencv-python) (1.18.2)
+Installing collected packages: opencv-python
+Successfully installed opencv-python-4.2.0.34
+
+2. Open a Python session and try:
+import cv2 
+
+3. If you get no errors, you installed OpenCV successfully. If you get an error, see the FAQs below:
+
+FAQs
+1. My OpenCV installation didn't work on Windows
+Solution:
+
+- 1. Uninstall OpenCV with:
+pip uninstall opencv-python
+
+- 2. Download a wheel (.whl) file from this link and install the file with pip. Make sure you download the 
+correct file for your Windows and your Python versions. For example, for Python 3.6 on Windows 64-bit you 
+would do this:
+pip install opencv_python‑3.2.0‑cp36‑cp36m‑win_amd64.whl 
+
+- 3. Try to import cv2 in Python again. If there's still an error, type the following again in the command line:
+pip install opencv-python 
+
+- 4. Try importing cv2 again. It should work at this point.
+
+2. My OpenCV installation didn't work on Mac
+
+Solution:
+If pip install opencv-python didn't work, install OpenCV for Python 2 and use Python 2 to run the programs 
+that contains cv2 code. Because Python 2 is installed by default on Mac, you don't need to install Python 2.
+
+Here are the steps to correctly install OpenCV:
+
+- 1. Install brew.
+To install brew, open your terminal and execute the following:
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+- 2. OpenCV depends on GTK+, so install that dependency first with brew (always from the terminal):
+brew install gtk+ 
+
+- 3. Install OpenCV with brew:
+brew install opencv 
+
+- 4. Open Python 2 by typing:
+python 
+
+- 5. Import cv2 in Python:
+import cv2 
+
+If you get no errors, you installed OpenCV successfully.
+
+3. My OpenCV installation didn't work on Linux
+
+- 1. Open your terminal and execute the following commands one by one:
+sudo apt-get install libqt4-dev
+cmake -D WITH_QT=ON ..
+make
+sudo make install
+
+- 2. 2. If the above commands don't work, execute this:
+sudo apt-get install libopencv-*
+
+- 3. Then, install OpenCV with pip:
+pip install opencv-python 
+
+4. Import cv2 in Python. If you get no errors, you installed OpenCV successfully.
+
+Commands:
+
+import cv2
+im_g=cv2.imread("smallgrey.png",0)
+im_g
+im_g1=cv2.imread("smallgrey.png",1)
+im_g1
+cv2.imwrite("newsmallgrey.png",im_g)
+# output True
+
+125. Stacking and Splitting Numpy Arrays
+
+ims=numpy.hstack((im_g,im_g))  # hstack() horizontal stack method which only takes one parameter
+                               # stick both parameters in two (()) which makes it a Tuple
+
+ims=numpy.vstack((im_g,im_g,im_g)) # obvi vertical stack method
+
+lst=numpy.hsplit(ims,5)
+print(lst)
+
+lst2=numpy.vsplit(ims,3)
+print(lst2)
+
