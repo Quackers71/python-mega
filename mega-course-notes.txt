@@ -2271,3 +2271,48 @@ print(lst)
 lst2=numpy.vsplit(ims,3)
 print(lst2)
 
+
+Section 17. Application 2: Create Webmaps with Python and Folium
+
+126. Web Map - How the Output will look like
+
+Basemap layer
+Polygon layer - representing the population of the countries
+Point layer
+
+# layers can be de-activated.
+
+127. The Basemap
+
+# Install Folium
+
+C:\Users\Rob\Desktop\AWS EC2\python-mega\Section17>pip3.8 install folium
+Collecting folium
+  Downloading https://files.pythonhosted.org/packages/fd/a0/ccb3094026649cda4acd55bf2c3822bb8c277eb11446d13d384e5be35257/folium-0.10.1-py2.py3-none-any.whl (91kB)
+     |████████████████████████████████| 92kB 1.5MB/s
+Collecting branca>=0.3.0 (from folium)
+  Downloading https://files.pythonhosted.org/packages/81/6d/31c83485189a2521a75b4130f1fee5364f772a0375f81afff619004e5237/branca-0.4.0-py3-none-any.whl
+Requirement already satisfied: jinja2>=2.9 in c:\users\rob\appdata\local\programs\python\python38\lib\site-packages (from folium) (2.11.1)
+Collecting requests (from folium)
+  Downloading https://files.pythonhosted.org/packages/1a/70/1935c770cb3be6e3a8b78ced23d7e0f3b187f5cbfab4749523ed65d7c9b1/requests-2.23.0-py2.py3-none-any.whl (58kB)
+     |████████████████████████████████| 61kB 3.8MB/s
+Requirement already satisfied: numpy in c:\users\rob\appdata\local\programs\python\python38\lib\site-packages (from folium) (1.18.1)
+Requirement already satisfied: six in c:\users\rob\appdata\local\programs\python\python38\lib\site-packages (from branca>=0.3.0->folium) (1.14.0)
+Requirement already satisfied: MarkupSafe>=0.23 in c:\users\rob\appdata\local\programs\python\python38\lib\site-packages (from jinja2>=2.9->folium) (1.1.1)
+Collecting urllib3!=1.25.0,!=1.25.1,<1.26,>=1.21.1 (from requests->folium)
+  Downloading https://files.pythonhosted.org/packages/e1/e5/df302e8017440f111c11cc41a6b432838672f5a70aa29227bf58149dc72f/urllib3-1.25.9-py2.py3-none-any.whl (126kB)
+     |████████████████████████████████| 133kB 3.3MB/s
+Collecting idna<3,>=2.5 (from requests->folium)
+  Downloading https://files.pythonhosted.org/packages/89/e3/afebe61c546d18fb1709a61bee788254b40e736cff7271c7de5de2dc4128/idna-2.9-py2.py3-none-any.whl (58kB)
+     |████████████████████████████████| 61kB 1.9MB/s
+Collecting certifi>=2017.4.17 (from requests->folium)
+  Downloading https://files.pythonhosted.org/packages/57/2b/26e37a4b034800c960a00c4e1b3d9ca5d7014e983e6e729e33ea2f36426c/certifi-2020.4.5.1-py2.py3-none-any.whl (157kB)
+     |████████████████████████████████| 163kB 3.2MB/s
+Collecting chardet<4,>=3.0.2 (from requests->folium)
+  Downloading https://files.pythonhosted.org/packages/bc/a9/01ffebfb562e4274b6487b4bb1ddec7ca55ec7510b22e4c51f14098443b8/chardet-3.0.4-py2.py3-none-any.whl (133kB)
+     |████████████████████████████████| 143kB 2.2MB/s
+Installing collected packages: branca, urllib3, idna, certifi, chardet, requests, folium
+Successfully installed branca-0.4.0 certifi-2020.4.5.1 chardet-3.0.4 folium-0.10.1 idna-2.9 requests-2.23.0 urllib3-1.25.9
+
+# This wasn't required but you may need install jinja2 - $ pip3.8 install jinja2
+
