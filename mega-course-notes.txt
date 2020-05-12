@@ -2276,9 +2276,9 @@ Section 17. Application 2: Create Webmaps with Python and Folium
 
 126. Web Map - How the Output will look like
 
-Basemap layer
-Polygon layer - representing the population of the countries
-Point layer
+Basemap layer - Names on the back
+Polygon layer - Representing the population of the countries
+Point layer - These are represented by Dots in this example
 
 # layers can be de-activated.
 
@@ -2316,3 +2316,20 @@ Successfully installed branca-0.4.0 certifi-2020.4.5.1 chardet-3.0.4 folium-0.10
 
 # This wasn't required but you may need install jinja2 - $ pip3.8 install jinja2
 
+C:\Users\Rob\Desktop\AWS EC2\python-mega>py
+Python 3.8.2 (tags/v3.8.2:7b3ab59, Feb 25 2020, 23:03:10) [MSC v.1916 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import folium
+>>> dir(folium)      
+['Choropleth', 'Circle', 'CircleMarker', 'ClickForMarker', 'ColorLine', 'ColorMap', 'CssLink', 'CustomIcon', 'Div', 'DivIcon', 'Element', 'FeatureGroup', 'Figure', 'FitBounds', 'GeoJson', 'GeoJsonTooltip', 'Html', 'IFrame', 'Icon', 'JavascriptLink', 'LatLngPopup', 'LayerControl', 'LinearColormap', 'Link', 'MacroElement', 'Map', 'Marker', 'PolyLine', 'Polygon', 'Popup', 'Rectangle', 'RegularPolygonMarker', 'StepColormap', 'TileLayer', 
+'Tooltip', 'TopoJson', 'Vega', 'VegaLite', 'WmsTileLayer', '__all__', '__builtins__', '__cached__', '__doc__', '__file__', '__loader__', '__name__', '__package__', '__path__', '__spec__', '__version__', '_version', 'branca', 'features', 'folium', 'map', 'raster_layers', 'sys', 'utilities', 'vector_layers']
+>>> help(folium.map)
+
+>>> map = folium.Map(location=[80, -100])
+>>> map.save("Map1.html")
+>>> map = folium.Map(location=[53.977048, -1.559376])
+>>> map.save("Map2.html") 
+>>> map = folium.Map(location=[53.977048, -1.559376], zoom_start=6)
+>>> map.save("Map2.html")
+>>> map = folium.Map(location=[53.977048, -1.559376], zoom_start=20)
+>>> map.save("Map2.html")
