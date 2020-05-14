@@ -2364,3 +2364,28 @@ volcano as a link which does a Google search for that particular
 volcano when clicked:
 
 See htmlonpopups-exercise2.py
+
+
+135. Add and Style Points (Practice)
+
+Coding Exercise
+
+Replace the icon markers we added in the previous lectures 
+with circle markers shown in the screenshot below.
+
+# There's a tip in the next lecture.
+
+
+136. Tip: Add and Style Points
+
+Exercise Tip
+
+You can use dir(folium)  to look for possible methods of 
+creating circle markers. Among the methods you will see 
+Marker, which we previously used. 
+
+Once you locate the method consider using the 'help'  
+function to look for possible arguments you can pass to 
+the method for styling the circle markers.
+
+
