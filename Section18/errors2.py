@@ -1,18 +1,4 @@
 a = 1
 b = "2"
-print(int(2.5)
-print(a + b)
-
-## Output
-# C:\Users\Rob\Desktop\AWS EC2\python-mega\Section18>py errors2.py
-# 2
-# Traceback (most recent call last):
-#   File "errors2.py", line 4, in <module>
-#     print(a + b)
-# TypeError: unsupported operand type(s) for +: 'int' and 'str'
-
-# C:\Users\Rob\Desktop\AWS EC2\python-mega\Section18>py errors2.py
-#   File "errors2.py", line 4
-#     print(a + b)
-#     ^
-# SyntaxError: invalid syntax
+print(int(2.5))
+print(str(a) + b)
