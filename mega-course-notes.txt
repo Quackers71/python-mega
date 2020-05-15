@@ -2392,3 +2392,5 @@ the method for styling the circle markers.
 Quiz 4: Errors
 # 4 questions
 
+Done with Examples / Output and Reasons why and what Errors
+
