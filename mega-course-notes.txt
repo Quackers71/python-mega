@@ -2389,3 +2389,6 @@ function to look for possible arguments you can pass to
 the method for styling the circle markers.
 
 
+Quiz 4: Errors
+# 4 questions
+
