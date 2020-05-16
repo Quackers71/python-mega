@@ -2423,3 +2423,11 @@ Please could someone help?
 
 Quackers x
 
+
+## Section 19: Aplication 3: Build a Website Blocker
+
+148. Application Architecture
+
+Mac & Linux: /etc/hosts
+Windows: C:\Windows\System32\drivers\etc\hosts
+
