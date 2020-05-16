@@ -2271,3 +2271,155 @@ print(lst)
 lst2=numpy.vsplit(ims,3)
 print(lst2)
 
+
+Section 17. Application 2: Create Webmaps with Python and Folium
+
+126. Web Map - How the Output will look like
+
+Basemap layer - Names on the back
+Polygon layer - Representing the population of the countries
+Point layer - These are represented by Dots in this example
+
+# layers can be de-activated.
+
+127. The Basemap
+
+# Install Folium
+
+C:\Users\Rob\Desktop\AWS EC2\python-mega\Section17>pip3.8 install folium
+Collecting folium
+  Downloading https://files.pythonhosted.org/packages/fd/a0/ccb3094026649cda4acd55bf2c3822bb8c277eb11446d13d384e5be35257/folium-0.10.1-py2.py3-none-any.whl (91kB)
+     |████████████████████████████████| 92kB 1.5MB/s
+Collecting branca>=0.3.0 (from folium)
+  Downloading https://files.pythonhosted.org/packages/81/6d/31c83485189a2521a75b4130f1fee5364f772a0375f81afff619004e5237/branca-0.4.0-py3-none-any.whl
+Requirement already satisfied: jinja2>=2.9 in c:\users\rob\appdata\local\programs\python\python38\lib\site-packages (from folium) (2.11.1)
+Collecting requests (from folium)
+  Downloading https://files.pythonhosted.org/packages/1a/70/1935c770cb3be6e3a8b78ced23d7e0f3b187f5cbfab4749523ed65d7c9b1/requests-2.23.0-py2.py3-none-any.whl (58kB)
+     |████████████████████████████████| 61kB 3.8MB/s
+Requirement already satisfied: numpy in c:\users\rob\appdata\local\programs\python\python38\lib\site-packages (from folium) (1.18.1)
+Requirement already satisfied: six in c:\users\rob\appdata\local\programs\python\python38\lib\site-packages (from branca>=0.3.0->folium) (1.14.0)
+Requirement already satisfied: MarkupSafe>=0.23 in c:\users\rob\appdata\local\programs\python\python38\lib\site-packages (from jinja2>=2.9->folium) (1.1.1)
+Collecting urllib3!=1.25.0,!=1.25.1,<1.26,>=1.21.1 (from requests->folium)
+  Downloading https://files.pythonhosted.org/packages/e1/e5/df302e8017440f111c11cc41a6b432838672f5a70aa29227bf58149dc72f/urllib3-1.25.9-py2.py3-none-any.whl (126kB)
+     |████████████████████████████████| 133kB 3.3MB/s
+Collecting idna<3,>=2.5 (from requests->folium)
+  Downloading https://files.pythonhosted.org/packages/89/e3/afebe61c546d18fb1709a61bee788254b40e736cff7271c7de5de2dc4128/idna-2.9-py2.py3-none-any.whl (58kB)
+     |████████████████████████████████| 61kB 1.9MB/s
+Collecting certifi>=2017.4.17 (from requests->folium)
+  Downloading https://files.pythonhosted.org/packages/57/2b/26e37a4b034800c960a00c4e1b3d9ca5d7014e983e6e729e33ea2f36426c/certifi-2020.4.5.1-py2.py3-none-any.whl (157kB)
+     |████████████████████████████████| 163kB 3.2MB/s
+Collecting chardet<4,>=3.0.2 (from requests->folium)
+  Downloading https://files.pythonhosted.org/packages/bc/a9/01ffebfb562e4274b6487b4bb1ddec7ca55ec7510b22e4c51f14098443b8/chardet-3.0.4-py2.py3-none-any.whl (133kB)
+     |████████████████████████████████| 143kB 2.2MB/s
+Installing collected packages: branca, urllib3, idna, certifi, chardet, requests, folium
+Successfully installed branca-0.4.0 certifi-2020.4.5.1 chardet-3.0.4 folium-0.10.1 idna-2.9 requests-2.23.0 urllib3-1.25.9
+
+# This wasn't required but you may need install jinja2 - $ pip3.8 install jinja2
+
+C:\Users\Rob\Desktop\AWS EC2\python-mega>py
+Python 3.8.2 (tags/v3.8.2:7b3ab59, Feb 25 2020, 23:03:10) [MSC v.1916 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import folium
+>>> dir(folium)      
+['Choropleth', 'Circle', 'CircleMarker', 'ClickForMarker', 'ColorLine', 'ColorMap', 'CssLink', 'CustomIcon', 'Div', 'DivIcon', 'Element', 'FeatureGroup', 'Figure', 'FitBounds', 'GeoJson', 'GeoJsonTooltip', 'Html', 'IFrame', 'Icon', 'JavascriptLink', 'LatLngPopup', 'LayerControl', 'LinearColormap', 'Link', 'MacroElement', 'Map', 'Marker', 'PolyLine', 'Polygon', 'Popup', 'Rectangle', 'RegularPolygonMarker', 'StepColormap', 'TileLayer', 
+'Tooltip', 'TopoJson', 'Vega', 'VegaLite', 'WmsTileLayer', '__all__', '__builtins__', '__cached__', '__doc__', '__file__', '__loader__', '__name__', '__package__', '__path__', '__spec__', '__version__', '_version', 'branca', 'features', 'folium', 'map', 'raster_layers', 'sys', 'utilities', 'vector_layers']
+>>> help(folium.map)
+
+>>> map = folium.Map(location=[80, -100])
+>>> map.save("Map1.html")
+>>> map = folium.Map(location=[53.977048, -1.559376])
+>>> map.save("Map2.html") 
+>>> map = folium.Map(location=[53.977048, -1.559376], zoom_start=6)
+>>> map.save("Map2.html")
+>>> map = folium.Map(location=[53.977048, -1.559376], zoom_start=20)
+>>> map.save("Map2.html")
+
+
+128. Note
+
+Note
+In the next lecture I use this in the code:
+
+tiles = "Mapbox Bright"
+
+Please use this instead:
+
+tiles = "Stamen Terrain"
+
+Mapbox Bright and Stament Terrain are both types of basemaps, 
+but Mapbox Bright doesn't work anymore. Stamen Terrain works great 
+and you will see it creates a beautiful relief map.
+
+
+133. HTML on Popups
+
+Note that if you want to have stylized text (bold, different 
+fonts, etc) in the popup window you can use HTML. Here's an example:
+
+See htmlonpopups-exercise1.py
+
+You can even put links in the popup window. For example, the 
+code below will produce a popup window with the name of the 
+volcano as a link which does a Google search for that particular 
+volcano when clicked:
+
+See htmlonpopups-exercise2.py
+
+
+135. Add and Style Points (Practice)
+
+Coding Exercise
+
+Replace the icon markers we added in the previous lectures 
+with circle markers shown in the screenshot below.
+
+# There's a tip in the next lecture.
+
+
+136. Tip: Add and Style Points
+
+Exercise Tip
+
+You can use dir(folium)  to look for possible methods of 
+creating circle markers. Among the methods you will see 
+Marker, which we previously used. 
+
+Once you locate the method consider using the 'help'  
+function to look for possible arguments you can pass to 
+the method for styling the circle markers.
+
+
+Quiz 4: Errors
+# 4 questions
+
+Done with Examples / Output and Reasons why and what Errors
+
+145. Good Programming questions
+
+# Example
+Hi
+I run the following code and expected to get the division in the
+last print statement but got an error.
+
+Here is my code:
+{
+    a = 1
+    b = "2"
+    c = 3
+    print(int(2.5))
+    print(c/0)
+}
+
+And here is the Error:
+{
+    2
+    Traceback (most recent call last):
+    File "errors3.py", line 5, in <module>
+    print(c/0)
+    ZeroDivisionError: division by zero
+}
+
+Please could someone help?
+
+Quackers x
+
