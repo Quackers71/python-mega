@@ -2394,3 +2394,32 @@ Quiz 4: Errors
 
 Done with Examples / Output and Reasons why and what Errors
 
+145. Good Programming questions
+
+# Example
+Hi
+I run the following code and expected to get the division in the
+last print statement but got an error.
+
+Here is my code:
+{
+    a = 1
+    b = "2"
+    c = 3
+    print(int(2.5))
+    print(c/0)
+}
+
+And here is the Error:
+{
+    2
+    Traceback (most recent call last):
+    File "errors3.py", line 5, in <module>
+    print(c/0)
+    ZeroDivisionError: division by zero
+}
+
+Please could someone help?
+
+Quackers x
+
