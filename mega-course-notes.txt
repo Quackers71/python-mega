@@ -2431,3 +2431,11 @@ Quackers x
 Mac & Linux: /etc/hosts
 Windows: C:\Windows\System32\drivers\etc\hosts
 
+# The date & time now using the datetime module
+>>> from datetime import datetime as dt
+>>> dt.now()
+datetime.datetime(2020, 5, 16, 20, 49, 48, 564639)
+(Year, Month, Day, Hour, Minutes, Seconds, Microseconds)
+>>> type(dt.now())
+<class 'datetime.datetime'>
+
