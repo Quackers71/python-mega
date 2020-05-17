@@ -2439,3 +2439,40 @@ datetime.datetime(2020, 5, 16, 20, 49, 48, 564639)
 >>> type(dt.now())
 <class 'datetime.datetime'>
 
+
+153. The any() function
+
+Hi! In case you didn't understand the if not any
+(website in line for website in website_list) 
+part in the previous video, here is another example:
+{
+    >>> lines  = ["trees are good", "pool is fresh", "face is round"]
+    >>> website_list = ["face", "clock", "trend"]
+    >>> for line in lines:
+    ...     any(website in line for website in website_list)
+    ... 
+    False
+    False
+    True
+}
+
+We start iterating over the items of website_list using a for loop.
+In the first iteration we would have:
+
+any(website in "trees are good" for website in website_list)
+
+Inside the parenthesis of any() there's another loop that iterates over website_list:
+{
+    ("face" in "trees are good")
+    ("clock" in "trees are good")
+    ("trend" in "trees are good")
+}
+
+If any of the above is True you get the expression evaluated to True. 
+In this case none of them is True, so you get False.
+
+If you want to return True (if all of them are True), use all() instead of any().
+
+So, the part any(website in line for website in website_list) will either be equal 
+to True or False.
+
