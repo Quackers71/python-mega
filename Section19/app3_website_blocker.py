@@ -2,23 +2,22 @@ import time
 from datetime import datetime as dt
 
 hosts_temp="hosts"
-#hosts_path="C:\Windows\System32\drivers\etc\hosts"
+hosts_path="C:\Windows\System32\drivers\etc\hosts"
 redirect="127.0.0.1"
 website_list=["www.facebook.com","facebook.com","www.purple.com","purple.com"]
 
 while True:
-    if dt(dt.now().year,dt.now().month,dt.now().day,23,1) < dt.now() < dt(dt.now().year,dt.now().month,dt.now().day,23,59):
+    if dt(dt.now().year,dt.now().month,dt.now().day,7,30) < dt.now() < dt(dt.now().year,dt.now().month,dt.now().day,15,30):
         print("Working hours...")
-        with open(hosts_temp,'r+') as file:
+        with open(hosts_path,'r+') as file:
             content=file.read()
-            # print(content)
             for website in website_list:
                 if website in content:
                     pass
                 else:
                     file.write(redirect+" "+website+"\n")
     else:
-        with open(hosts_temp, 'r+') as file:
+        with open(hosts_path,'r+') as file:
             content=file.readlines()
             file.seek(0)
             for line in content:
