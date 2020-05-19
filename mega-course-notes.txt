@@ -2545,3 +2545,11 @@ Successfully installed Werkzeug-1.0.1 click-7.1.2 flask-1.1.2 itsdangerous-1.1.0
 
 https://pypi.org/project/Flask/
 
+
+161. Note on Browser Caching
+
+In the next lecture we will add CSS styling to the webpage. Sometimes, when you make a change 
+to the CSS file and reload the webpage, the changes are not shown because the browser uses the 
+previous cached styling. If this happens, open the browser in private (incognito) mode and load 
+the webpage there.
+
