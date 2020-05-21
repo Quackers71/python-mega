@@ -2591,16 +2591,17 @@ Collecting MarkupSafe>=0.23 (from Jinja2>=2.10.1->flask)
 Installing collected packages: click, Werkzeug, MarkupSafe, Jinja2, itsdangerous, flask
 Successfully installed Jinja2-2.11.2 MarkupSafe-1.1.1 Werkzeug-1.0.1 click-7.1.2 flask-1.1.2 itsdangerous-1.1.0
 
+# Now run the code within the virtualenv
 
-164. How to install Git
+C:\Users\Rob\Desktop\AWS EC2\python-mega\Section20\mysite>virtual\Scripts\python Demo\script1.py
+ * Serving Flask app "script1" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 186-569-561
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
 
-In the next lecture you will also learn how to deploy the web 
-app into a live server. We will use the Git software for that. Git 
-is a version control system allowing you to upload the project 
-files to a server and helps track your changes while maintaining 
-the web app.
-
-Download Git from its official webpage, https://git-scm.com/downloads, 
-and double click for installation. Follow the installation instructions 
-without changing anything. 
-
+ 
