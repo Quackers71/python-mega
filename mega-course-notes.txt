@@ -2631,3 +2631,5 @@ STANDARD OPTIONS
     repeatinterval, takefocus, text,
     textvariable, underline, wraplength
 
+# use grid() over pack() as it has more control over Buttons or Widgets
+
