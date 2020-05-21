@@ -2605,3 +2605,29 @@ C:\Users\Rob\Desktop\AWS EC2\python-mega\Section20\mysite>virtual\Scripts\python
  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
 
  
+ ## Section 21: Graphical User Interfaces with Tkinter
+
+# Checking Button() Args
+C:\Users\Rob\Desktop\AWS EC2\python-mega\Section21>ipython
+Python 3.8.2 (tags/v3.8.2:7b3ab59, Feb 25 2020, 23:03:10) [MSC v.1916 64 bit (AMD64)]
+Type 'copyright', 'credits' or 'license' for more information
+IPython 7.13.0 -- An enhanced Interactive Python. Type '?' for help.
+
+In [1]: from tkinter import *
+In [2]: Button?
+Init signature: Button(master=None, cnf={}, **kw)
+Docstring:      Button widget.
+Init docstring:
+Construct a button widget with the parent MASTER.
+
+STANDARD OPTIONS
+
+    activebackground, activeforeground, anchor,
+    background, bitmap, borderwidth, cursor,
+    disabledforeground, font, foreground
+    highlightbackground, highlightcolor,
+    highlightthickness, image, justify,
+    padx, pady, relief, repeatdelay,
+    repeatinterval, takefocus, text,
+    textvariable, underline, wraplength
+
