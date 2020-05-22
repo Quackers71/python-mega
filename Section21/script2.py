@@ -1,6 +1,7 @@
 from tkinter import *
 
 window=Tk()
+window.wm_title("Q's Converter")
 
 def kg_conversions():
     t1.delete(1.0,END)
@@ -19,11 +20,12 @@ def kg_conversions():
     stone=float(e1_value.get())*0.157473
     t4.insert(END,stone)
 
+
 kg1=Label(window, text="Kgs")
 kg1.grid(row=0,column=0)
 
-g1=Label(window, text="Grams")
-g1.grid(row=2,column=0)
+grams1=Label(window, text="Grams")
+grams1.grid(row=2,column=0)
 
 pounds1=Label(window, text="Pounds")
 pounds1.grid(row=2,column=1)
@@ -38,10 +40,12 @@ stone1.grid(row=2,column=3)
 b1=Button(window,text="Convert", command=kg_conversions)
 b1.grid(row=0,column=3)
 
-e1_value=1
+
+default_value=1
 e1_value=StringVar()
 e1=Entry(window, textvariable=e1_value)
 e1.grid(row=0,column=1)
+e1_value.set(default_value)
 
 e2_value=StringVar()
 e2=Entry(window, textvariable=e1_value)
@@ -61,5 +65,6 @@ t3.grid(row=1,column=2)
 
 t4=Text(window,height=1,width=15)
 t4.grid(row=1,column=3)
+
 
 window.mainloop()
