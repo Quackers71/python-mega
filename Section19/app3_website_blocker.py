@@ -7,7 +7,7 @@ redirect="127.0.0.1"
 website_list=["www.facebook.com","facebook.com","www.purple.com","purple.com"]
 
 while True:
-    if dt(dt.now().year,dt.now().month,dt.now().day,17,55) < dt.now() < dt(dt.now().year,dt.now().month,dt.now().day,23,59):
+    if dt(dt.now().year,dt.now().month,dt.now().day,23,55) < dt.now() < dt(dt.now().year,dt.now().month,dt.now().day,23,59):
         print("Working hours...")
         with open(hosts_temp,'r+') as file:
             content=file.read()
