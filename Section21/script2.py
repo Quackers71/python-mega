@@ -15,9 +15,8 @@ def kg_conversions():
     ounces=float(e1_value.get())*35.274
     t3.insert(END,ounces)
 
-# root=Tk()
-# kgs=Label(root, text="Kgs")
-# kgs.grid(row=0,column=0)
+kg1=Label(window, text="Kgs")
+kg1.grid(row=0,column=0)
 
 b1=Button(window,text="Convert", command=kg_conversions)
 b1.grid(row=0,column=3)
