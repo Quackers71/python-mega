@@ -2631,3 +2631,19 @@ STANDARD OPTIONS
     repeatinterval, takefocus, text,
     textvariable, underline, wraplength
 
+# use grid() over pack() as it has more control over Buttons or Widgets
+
+
+172. Create a Multi-widget GUI (Practice)
+
+Create a Python program that expects a kilogram input value 
+and converts that value to grams, pounds, and ounces when 
+the user pushes the Convert button.   
+
+The program will look similar to the one in the following picture:
+{}
+
+Tip:  
+1 kg = 1000 grams  
+1 kg = 2.20462 pounds  
+1 kg = 35.274 ounces
